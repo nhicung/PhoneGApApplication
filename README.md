@@ -11,4 +11,7 @@ Test my github desktop - Ling
 
 Test out question 5 - Nhi 
 
+Test out question 6 - Ling
+
 Test out for question 6 - Nhi 
+
