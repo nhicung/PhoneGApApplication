@@ -210,3 +210,20 @@ h1 {
         border: 1px solid #ccc;
     }
 }
+
+.donate-btn{
+  font-family: Arial;
+  color: #DCDCF0;
+  font-size: 20px;
+  background: #000080;
+  padding: 10px 20px 10px 20px;
+}
+
+.donate-btn:hover {
+  background: #000080;
+  background-image: -webkit-linear-gradient(top, #000080, #2929EC);
+  background-image: -moz-linear-gradient(top, #000080, #2929EC);
+  background-image: -ms-linear-gradient(top, #000080, #2929EC);
+  background-image: -o-linear-gradient(top, #000080, #2929EC);
+  background-image: linear-gradient(to bottom, #000080, #2929EC);
+}
