@@ -118,7 +118,7 @@ h1 {
     background-color: #2E2EFD;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .sidenav a {
@@ -135,8 +135,8 @@ h1 {
 }
 
 .logo2 {
-    height:200px;
-    width:200px;
+    height:180px;
+    width:180px;
     margin: auto;
 }
 
