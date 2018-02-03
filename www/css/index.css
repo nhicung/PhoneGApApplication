@@ -211,12 +211,15 @@ h1 {
     }
 }
 
-.donate-btn{
+.button {
   font-family: Arial;
+  font-size: 25px;
+  padding: 15px 20px 15px 20px;
+}
+
+.donate-btn{
   color: #DCDCF0;
-  font-size: 20px;
   background: #000080;
-  padding: 10px 20px 10px 20px;
 }
 
 .donate-btn:hover {
@@ -226,4 +229,32 @@ h1 {
   background-image: -ms-linear-gradient(top, #000080, #2929EC);
   background-image: -o-linear-gradient(top, #000080, #2929EC);
   background-image: linear-gradient(to bottom, #000080, #2929EC);
+}
+
+.shop-btn{
+  color: #DCDCF0;
+  background: #5757D8;
+}
+
+.shop-btn:hover{
+  background: #5757D8;
+  background-image: -webkit-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: -moz-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: -ms-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: -o-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: linear-gradient(to bottom, #5757D8, #A1A1D8);
+}
+
+.expl-btn{
+  color: #DCDCF0;
+  background: #0505CD;
+}
+
+.expl-btn:hover{
+  background: #0505CD;
+  background-image: -webkit-linear-gradient(top, #0505CD, #8787FE);
+  background-image: -moz-linear-gradient(top, #0505CD, #8787FE);
+  background-image: -ms-linear-gradient(top, #0505CD, #8787FE);
+  background-image: -o-linear-gradient(top, #0505CD, #8787FE);
+  background-image: linear-gradient(to bottom, #0505CD, #8787FE);
 }
