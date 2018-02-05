@@ -61,7 +61,7 @@ body {
     }
 }
 
-h1 {
+.image h1 {
     font-size:24px;
     font-weight:bold;
     font-style: space mono;
@@ -70,6 +70,7 @@ h1 {
     padding:0px;
     text-align:center;
     color: navy;
+    top: 50%;
 }
 
 .event {
@@ -178,22 +179,6 @@ h1 {
     font-size: 17px;
 }
 
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-
 @media screen and (max-width: 600px) {
      .topnav .search-container {
     float: none;
@@ -210,7 +195,27 @@ h1 {
         border: 1px solid #ccc;
     }
 }
-
+.image img{
+    width:20%;
+    position: absolute;
+    top: 13%;
+    margin-left: 20%;
+}
+p.section1{
+    border: 2px solid navy;
+    border-radius: 8px;
+    height:150px;
+}
+p.section2{
+    border: 2px solid navy;
+    border-radius: 8px;
+    height:150px;
+}
+.a:hover{
+    color:white;
+    background: navy; 
+    font-size: 10px
+}
 .button {
   font-family: Arial;
   font-size: 25px;

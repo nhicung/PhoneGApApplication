@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--
     Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
     Licensed to the Apache Software Foundation (ASF) under one
     or more contributor license agreements.  See the NOTICE file
     distributed with this work for additional information
@@ -8,7 +9,9 @@
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
+
     http://www.apache.org/licenses/LICENSE-2.0
+
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -40,27 +43,34 @@
 </head>
 
 <body>
-    
+
     <!-- sidebar menu button -->
     <span style="font-size:45px;color:#000080;padding:2px;cursor:pointer" onclick="openNav()">&#9776; </span>
-    <!-- Here begins the home screen -->
-    
     <div class="image">
-         <img src="img/Logo3.png">
-        <h1>Sjögrens Dictionary</h1>
-
-    <div class="topnav">
-        <div class="search-container">
-            <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <p class="section1">
-                    <a href="CommonSymptoms.html">Commom Symptoms</a></p>
-                <p class="section2">   
-                    <a href="UsefulTips.html">Useful Tips</a></p>
-            </form>
-        </div>
+        <h1>Learn More</h1>
     </div>
-</div>
+
+    <div id="donate" class="button1" style="text-align:center;">
+        <button onlick="#" class="donate-btn"><a href="https://www.sjogrens.org/main-payment-page/"
+          style="color:#DCDCF0;text-decoration:none">Donate to Sjogrens</a></button>
+        <span id="info-donate" class="button-text" style="text-decoration:none"><br>
+          If you want to do your endeavor to millions of people with Sjogrens, please go here!
+        </span>
+    </div>
+    <div id="o-shop" class="button" style="text-align:center;">
+        <button class="shop-btn"><a href="http://www.sjogrens.org/ssfstore"
+          style="color:#DCDCF0;text-decoration:none">Shop on Sjogrens</a></button><br>
+        <span id="info-shop" class="button-text" style="text-decoration:none">
+          Shop the various valuable resources collected for Sjogrens patients.
+        </span>
+    </div>
+    <div id="expl-ssf" class="button" style="text-align:center;">
+        <button class="expl-btn"><a href="http://www.sjogrens.org/home/about-the-foundation"
+          style="color:#DCDCF0;text-decoration:none">Explore Sjogrens Syndrome Foundation</a></button><br>
+        <span id="info-expl" class="button-text" style="text-decoration:none">
+          Learn more about the only national non-profit organization focused on Sjogrens in the US.
+        </span>
+    </div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -80,9 +90,11 @@
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
         }
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
         }
     </script>
 </body>
