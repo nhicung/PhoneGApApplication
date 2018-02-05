@@ -290,3 +290,9 @@ p.section2{
   margin-top: 10px;
   padding: 5px;
 }
+
+.listsymptoms a{
+    font-family: Arial;
+    font-size: 25px;
+    padding: 5px;
+}
