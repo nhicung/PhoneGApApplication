@@ -1,4 +1,4 @@
-cordova.define("cordova-plugin-globalization.GlobalizationError", function(require, exports, module) { /*
+cordova.define("cordova-plugin-media-capture.MediaFileData", function(require, exports, module) { /*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -20,23 +20,22 @@ cordova.define("cordova-plugin-globalization.GlobalizationError", function(requi
 */
 
 /**
- * Globalization error object
+ * MediaFileData encapsulates format information of a media file.
  *
- * @constructor
- * @param code
- * @param message
+ * @param {DOMString} codecs
+ * @param {long} bitrate
+ * @param {long} height
+ * @param {long} width
+ * @param {float} duration
  */
-var GlobalizationError = function (code, message) {
-    this.code = code || null;
-    this.message = message || '';
+var MediaFileData = function(codecs, bitrate, height, width, duration){
+    this.codecs = codecs || null;
+    this.bitrate = bitrate || 0;
+    this.height = height || 0;
+    this.width = width || 0;
+    this.duration = duration || 0;
 };
 
-// Globalization error codes
-GlobalizationError.UNKNOWN_ERROR = 0;
-GlobalizationError.FORMATTING_ERROR = 1;
-GlobalizationError.PARSING_ERROR = 2;
-GlobalizationError.PATTERN_ERROR = 3;
-
-module.exports = GlobalizationError;
+module.exports = MediaFileData;
 
 });
