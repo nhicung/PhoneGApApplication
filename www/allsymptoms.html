@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc; 
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h1>All Symptoms</h1>
+
+<button class="accordion">Main Symptoms</button>
+<div class="panel">
+  <p>The main symptoms are dry mouths and dry eyes.</p>
+</div>
+
+<button class="accordion">Pain Areas</button>
+<div class="panel">
+  <p>Patient may experience pain in the joints or muscles.</p>
+</div>
+
+<button class="accordion">Sensory</button>
+<div class="panel">
+  <p>Patient may experience abnormality of taste, loss of taste, or pins and needles.</p>
+</div>
+
+<button class="accordion">Mouth</button>
+<div class="panel">
+  <p>Patient may experience dental cavities, dryness, or ulcers.</p>
+</div>
+
+<button class="accordion">Speech</button>
+<div class="panel">
+  <p>Patient may experience hoarseness or impaired voice.</p>
+</div>
+
+<button class="accordion">Throat</button>
+<div class="panel">
+  <p>Patient may experience difficulty swallowing or dryness.</p>
+</div>
+
+<button class="accordion">Other Common Symptoms</button>
+<div class="panel">
+  <p>Patient may also experience other common symptoms such as dry cough, dry eyes, dry skin, fatigue, joint stiffness, stiffness, swollen lymph nodes, or vaginal dryness.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
