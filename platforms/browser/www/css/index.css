@@ -161,7 +161,7 @@ body {
     color: black;
 }
 
-.topnav a.active {
+.topnav a{
     background-color: navy;
     color: white;
 }
