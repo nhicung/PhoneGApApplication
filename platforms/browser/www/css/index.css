@@ -61,7 +61,7 @@ body {
     }
 }
 
-h1 {
+.image h1 {
     font-size:24px;
     font-weight:bold;
     font-style: space mono;
@@ -70,6 +70,7 @@ h1 {
     padding:0px;
     text-align:center;
     color: navy;
+    top: 50%;
 }
 
 .event {
@@ -115,17 +116,17 @@ h1 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #000080;
+    background-color: #2E2EFD;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 170px;
+    padding-top: 40px;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #F9D9D2;
+    color: #DCDCF0;
     display: block;
     transition: 0.3s;
 }
@@ -134,12 +135,10 @@ h1 {
     color: #f1f1f1;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 20px;
-    margin-left: 50px;
+.logo2 {
+    height:180px;
+    width:180px;
+    margin: auto;
 }
 
 .topnav {
@@ -162,7 +161,7 @@ h1 {
     color: black;
 }
 
-.topnav a.active {
+.topnav a{
     background-color: navy;
     color: white;
 }
@@ -180,22 +179,6 @@ h1 {
     font-size: 17px;
 }
 
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.topnav .search-container button:hover {
-  background: #ccc;
-}
-
-
 @media screen and (max-width: 600px) {
      .topnav .search-container {
     float: none;
@@ -211,4 +194,107 @@ h1 {
     .topnav input[type=text] {
         border: 1px solid #ccc;
     }
+}
+.image img{
+    width:20%;
+    position: absolute;
+    top: 13%;
+    margin-left: 20%;
+}
+p.section1{
+    border: 2px solid navy;
+    border-radius: 8px;
+    height:130px;
+}
+p.section2{
+    border: 2px solid navy;
+    border-radius: 8px;
+    height:130px;
+}
+.a:hover{
+    color:white;
+    background: navy; 
+    font-size: 10px
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.button {
+  font-family: Arial;
+  font-size: 25px;
+  padding: 10px 20px 10px 20px;
+}
+
+.button1 {
+  font-family: Arial;
+  font-size: 25px;
+  padding: 0px 20px 10px 20px;
+}
+
+.donate-btn{
+  color: #DCDCF0;
+  background: #000080;
+}
+
+.donate-btn:hover {
+  background: #000080;
+  background-image: -webkit-linear-gradient(top, #000080, #2929EC);
+  background-image: -moz-linear-gradient(top, #000080, #2929EC);
+  background-image: -ms-linear-gradient(top, #000080, #2929EC);
+  background-image: -o-linear-gradient(top, #000080, #2929EC);
+  background-image: linear-gradient(to bottom, #000080, #2929EC);
+}
+
+.shop-btn{
+  color: #DCDCF0;
+  background: #5757D8;
+}
+
+.shop-btn:hover{
+  background: #5757D8;
+  background-image: -webkit-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: -moz-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: -ms-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: -o-linear-gradient(top, #5757D8, #A1A1D8);
+  background-image: linear-gradient(to bottom, #5757D8, #A1A1D8);
+}
+
+.expl-btn{
+  color: #DCDCF0;
+  background: #0505CD;
+}
+
+.expl-btn:hover{
+  background: #0505CD;
+  background-image: -webkit-linear-gradient(top, #0505CD, #8787FE);
+  background-image: -moz-linear-gradient(top, #0505CD, #8787FE);
+  background-image: -ms-linear-gradient(top, #0505CD, #8787FE);
+  background-image: -o-linear-gradient(top, #0505CD, #8787FE);
+  background-image: linear-gradient(to bottom, #0505CD, #8787FE);
+}
+
+.button-text{
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.listsymptoms a{
+    font-family: Arial;
+    font-size: 25px;
+    padding: 5px;
+    color: navy; 
+    
 }

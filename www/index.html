@@ -36,23 +36,34 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;padding:2px;cursor:pointer" onclick="openNav()">&#9776; </span>
     <title>Sjogrens Dictionary</title>
 </head>
 
 <body>
-<h1>Sjogrens Dictionary</h1>
-
+    
+    <!-- sidebar menu button -->
+    <span style="font-size:45px;color:#000080;padding:2px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <!-- Here begins the home screen -->
+    
+    <div class="image">
+         <img src="img/Logo3.png">
+        <h1>Sjögrens Dictionary</h1>
 
     <div class="topnav">
         <div class="search-container">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <p class="section1">
+                    <a href="CommonSymptoms.html">Commom Symptoms</a></p>
+                <p class="section2">   
+                    <a href="UsefulTips.html">Useful Tips</a></p>
             </form>
         </div>
     </div>
+    <div class="footer">
+        <a href="index.html">Home</a>
+    </div>
+</div>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -61,24 +72,23 @@
     </script>
 
     <!-- Here begins the sidebar menu -->
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div id="mySidenav" class="sidenav" onclick="closeNav()">
+        <img src="img/Logo3.png" class="logo2">
         <a href="index.html">Home</a>
         <a href="#">All Symptoms</a>
         <a href="LearnMore.html">Learn More</a>
-        <a href="#">Terms&Conditions</a>
+        <a href="TermsandConditions.html">Terms and Conditions</a>
         <a href="#">Contact US</a>
     </div>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
         }
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
         }
     </script>
+    
 </body>
 
 </html>
