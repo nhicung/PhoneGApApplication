@@ -4,36 +4,40 @@
 
     
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc; 
-}
-
-.panel {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-    overflow: hidden;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
 <title>Sjögrens Dictionary</title>
 </head>
 <body>
+<!-- sidebar menu button -->
+    <span style="font-size:45px;color:#000080;padding:2px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <div class="image">
+        <h1>All Symptoms</h1>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+<div id="mySidenav" class="sidenav" onclick="closeNav()">
+        <img src="img/Logo3.png" class="logo2">
+        <a href="index.html">Home</a>
+        <a href="AllSymptoms.html">All Symptoms</a>
+        <a href="LearnMore.html">Learn More</a>
+        <a href="TermsandConditions.html">Terms and Conditions</a>
+        <a href="#">Contact US</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
 
-<h1>All Symptoms</h1>
+
 
 <button class="accordion">Main Symptoms</button>
 <div class="panel">
@@ -86,23 +90,7 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 </script>
-<div id="mySidenav" class="sidenav" onclick="closeNav()">
-        <img src="img/Logo3.png" class="logo2">
-        <a href="index.html">Home</a>
-        <a href="#">All Symptoms</a>
-        <a href="LearnMore.html">Learn More</a>
-        <a href="TermsandConditions.html">Terms and Conditions</a>
-        <a href="#">Contact US</a>
-    </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
-        }
-    </script>
+
+
 </body>
 </html>
