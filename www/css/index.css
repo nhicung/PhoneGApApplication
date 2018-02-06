@@ -305,24 +305,26 @@ p.section2{
     width: 50%;
 }
 .dropbtn {
-    background-color: navy;
+    background-color: navy ;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
+    width: 400px;
+    text-align: center;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+    background-color: navy;
 }
 
-.listsymptoms {
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-.listsymptoms-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
@@ -330,15 +332,16 @@ p.section2{
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    width: 400px;
 }
 
-.listsymptoms-content a {
-    color: black;
+.dropdown-content a {
+    color: navy;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.listsymptoms a:hover {background-color: #ddd}
+.dropdown a:hover {background-color: #ddd}
 
 .show {display:block;}
