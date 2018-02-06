@@ -204,12 +204,12 @@ body {
 p.section1{
     border: 2px solid navy;
     border-radius: 8px;
-    height:150px;
+    height:130px;
 }
 p.section2{
     border: 2px solid navy;
     border-radius: 8px;
-    height:150px;
+    height:130px;
 }
 .a:hover{
     color:white;
