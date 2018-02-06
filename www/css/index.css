@@ -291,6 +291,7 @@ p.section2{
   padding: 5px;
 }
 
+<<<<<<< HEAD
 .listsymptoms a{
     font-family: Arial;
     font-size: 25px;
@@ -321,3 +322,59 @@ p.section2{
     background-color: white;
     overflow: hidden;
 }
+=======
+.button {
+    background-color: n; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+}
+.dropbtn {
+    background-color: navy ;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    width: 400px;
+    text-align: center;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: navy;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 400px;
+}
+
+.dropdown-content a {
+    color: navy;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+>>>>>>> master
