@@ -213,7 +213,7 @@ p.section2{
 }
 .a:hover{
     color:white;
-    background: navy; 
+    background: navy;
     font-size: 10px
 }
 
@@ -291,13 +291,12 @@ p.section2{
   padding: 5px;
 }
 
-<<<<<<< HEAD
 .listsymptoms a{
     font-family: Arial;
     font-size: 25px;
     padding: 5px;
-    color: navy; 
-    
+    color: navy;
+
 }
 .accordion {
     background-color: #eee;
@@ -313,7 +312,7 @@ p.section2{
 }
 
 .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color: #ccc;
 }
 
 .panel {
@@ -377,4 +376,3 @@ p.section2{
 .dropdown a:hover {background-color: #ddd}
 
 .show {display:block;}
->>>>>>> master

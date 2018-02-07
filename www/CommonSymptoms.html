@@ -45,7 +45,8 @@
 <body>
 
     <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;padding:2px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:310px;
+    ;cursor:pointer" onclick="openNav()">&#9776; </span>
     <div class="image">
         <h1>Common Symptoms</h1>
     </div>
@@ -53,7 +54,7 @@
 
             There are 10 common symptoms that we can easily recognize if some one is a Sjögren patient
         </p>
-    
+
        <div class="dropdown">
            <button onclick="myFunction()" class="dropbtn">Dry Eyes</button>
                 <div id="myDropdown" class="dropdown-content">
@@ -65,7 +66,7 @@
         </div>
 
 <script>
-/* When the user clicks on the button, 
+/* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
