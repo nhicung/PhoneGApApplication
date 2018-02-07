@@ -44,12 +44,16 @@
 
 <body>
 
+    <!-- go back button -->
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:10px;
+    ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span>
     <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;padding:2px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:255px;
+    ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
     <div class="image">
         <h1>Terms and Conditions</h1>
     </div>
-        
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
@@ -73,6 +77,9 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             document.body.style.backgroundColor = "white";
+        }
+        function goBack() {
+            window.history.back();
         }
     </script>
 </body>

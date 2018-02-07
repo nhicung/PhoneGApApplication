@@ -41,9 +41,12 @@
 
 <body>
 
+    <!-- go back button -->
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:10px;
+    ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span>
     <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:310px;
-    ;cursor:pointer" onclick="openNav()">&#9776; </span>
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:255px;
+    ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
     <!-- Here begins the home screen -->
 
     <div class="image">
@@ -87,6 +90,9 @@
         }
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+        }
+        function goBack() {
+            window.history.back();
         }
     </script>
 
