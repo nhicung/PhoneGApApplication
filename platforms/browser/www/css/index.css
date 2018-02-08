@@ -109,6 +109,12 @@ body {
     -webkit-animation:fade 3000ms infinite;
 }
 
+.sticky {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
