@@ -45,13 +45,23 @@
         }
     </script>
 
-
-
+<style>
+.accordion{ 
+	text-align: center;
+	height: 50px;
+}
+#last{
+		margin-bottom: 60px;
+}
+.info-tabs{
+	overflow: scroll;
+}
+</style>
+<div class="info-tabs">
 <button class="accordion">Main Symptoms</button>
 <div class="panel">
-  <p>The main symptoms are dry mouths and dry eyes.</p>
+  <p>The main symptoms are dry mouth and dry eyes.</p>
 </div>
-
 <button class="accordion">Pain Areas</button>
 <div class="panel">
   <p>Patient may experience pain in the joints or muscles.</p>
@@ -77,9 +87,10 @@
   <p>Patient may experience difficulty swallowing or dryness.</p>
 </div>
 
-<button class="accordion">Other Common Symptoms</button>
-<div class="panel">
+<button class="accordion" >Other Common Symptoms</button>
+<div class="panel" id="last">
   <p>Patient may also experience other common symptoms such as dry cough, dry eyes, dry skin, fatigue, joint stiffness, stiffness, swollen lymph nodes, or vaginal dryness.</p>
+</div>
 </div>
 
 <script>
@@ -111,6 +122,7 @@ body {margin:0;}
     overflow: auto;
     position: fixed;
     bottom: 0;
+    margin-top: 10px;
 }
 
 .icon-bar a {
@@ -124,10 +136,10 @@ body {margin:0;}
 }
 
 .icon-bar a:hover {
-    background-color: #000;
+    background-color: navy;
 }
 
-.active {
+.active1 {
     background-color: navy;
 }
 </style>
@@ -135,7 +147,7 @@ body {margin:0;}
 
 <div class="icon-bar">
   <a href="#"><i class="fa fa-search"></i></a>
-  <a class="active" href="#"><i class="fa fa-home"></i></a>
+  <a class="active1" href="index.html"><i class="fa fa-home"></i></a>
   <a href="#"><i class="fa fa-cog"></i></a>
 </div>
 </body>
