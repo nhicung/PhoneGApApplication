@@ -109,6 +109,22 @@ body {
     -webkit-animation:fade 3000ms infinite;
 }
 
+#fixedbar {
+    overflow:hidden;
+}
+
+#fixedbar a {
+    float: right;
+    display: block;
+}
+
+.content {
+    padding: 20px;
+}
+
+.sticky + .content {
+    padding-top: 40px;
+}
 .sticky {
     position: fixed;
     top:0;
