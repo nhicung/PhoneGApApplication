@@ -17,6 +17,7 @@
     <span style="font-size:45px;color:#000080;position:relative;top:10px;left:255px;
     ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
   </div>
+
     <div class="image">
         <h1>All Symptoms</h1>
     </div>
@@ -24,39 +25,6 @@
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
-    </script>
-
-    <div id="mySidenav" class="sidenav" onclick="closeNav()">
-        <img src="img/Logo3.png" class="logo2">
-        <a href="index.html">Home</a>
-        <a href="allsymptoms.html">All Symptoms</a>
-        <a href="LearnMore.html">Learn More</a>
-        <a href="TermsandConditions.html">Terms and Conditions</a>
-        <a href="ContactUS.html">Contact US</a>
-    </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
-        }
-        function goBack() {
-            window.history.back();
-        }
-        window.onscroll = function() {myFunction()};
-
-        var header = document.getElementById("barid");
-        var sticky = header.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                header.classList.add("sticky");
-            } else {
-                header.classList.remove("sticky");
-            }
-        }
     </script>
 
 <style>
@@ -124,6 +92,27 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
+<div id="mySidenav" class="sidenav" onclick="closeNav()">
+    <img src="img/Logo3.png" class="logo2">
+    <a href="index.html">Home</a>
+    <a href="allsymptoms.html">All Symptoms</a>
+    <a href="LearnMore.html">Learn More</a>
+    <a href="TermsandConditions.html">Terms and Conditions</a>
+    <a href="ContactUS.html">Contact US</a>
+</div>
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+    }
+    function goBack() {
+        window.history.back();
+    }
+
+</script>
 <!--bottom menu bar-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
