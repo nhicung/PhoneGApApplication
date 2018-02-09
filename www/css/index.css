@@ -225,21 +225,20 @@ body {
     top: 13%;
     margin-left: 20%;
 }
-p.section1{
-    border: 2px solid navy;
-    border-radius: 8px;
-    height:130px;
+.section a { 
+    width: 294px; 
+} 
+.a:hover{ 
+    color:white; 
+    background: navy; 
+    font-size: 10px;
 }
-p.section2{
-    border: 2px solid navy;
-    border-radius: 8px;
-    height:130px;
-}
-.a:hover{
-    color:white;
-    background: navy;
-    font-size: 10px
-}
+.content{ 
+  border:2px solid navy; 
+    border-radius: 8px; 
+  padding:10px; 
+    margin: 15px; 
+} 
 
 .footer {
     background-color: #222;
