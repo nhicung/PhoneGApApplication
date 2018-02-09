@@ -28,6 +28,7 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -68,12 +69,47 @@
                     <a href="#contact">Tips</a>
                     <a href="#contact">Learn More</a>
                 </div>
+           
         </div>
+    
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    
+        <div class="dropdown">
+           <button onclick="myMouth()" class="dropbtn">Dry Mouth</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#home">General Information</a>
+                    <a href="#about">Treatment</a>
+                    <a href="#contact">Tips</a>
+                    <a href="#contact">Learn More</a>
+                </div>
+        </div>
+
 
 <script>
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function myMouth() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
