@@ -56,27 +56,53 @@
         <h1>Learn More</h1>
     </div>
 
-    <div id="donate" class="button1" style="text-align:center;">
-        <button onlick="#" class="donate-btn"><a href="https://www.sjogrens.org/main-payment-page/"
+    <div class="button1" style="text-align:center;">
+        <button class="donate-btn"><a href="#" onclick="openInAppBrowserBlank('https://www.sjogrens.org/main-payment-page/');"
           style="color:#DCDCF0;text-decoration:none">Donate to Sjogrens</a></button>
-        <span id="info-donate" class="button-text" style="text-decoration:none"><br>
+        <span class="button-text"><br>
           If you want to do your endeavor to millions of people with Sjogrens, please go here!
         </span>
     </div>
-    <div id="o-shop" class="button" style="text-align:center;">
-        <button class="shop-btn"><a href="http://www.sjogrens.org/ssfstore"
+    <div class="button" style="text-align:center;">
+        <button class="shop-btn"><a href="#" onclick="openInAppBrowserBlank('http://www.sjogrens.org/ssfstore');"
           style="color:#DCDCF0;text-decoration:none">Shop on Sjogrens</a></button><br>
-        <span id="info-shop" class="button-text" style="text-decoration:none">
+        <span class="button-text">
           Shop the various valuable resources collected for Sjogrens patients.
         </span>
     </div>
-    <div id="expl-ssf" class="button" style="text-align:center;">
-        <button class="expl-btn"><a href="http://www.sjogrens.org/home/about-the-foundation"
+    <div class="button" style="text-align:center;">
+        <button class="expl-btn"><a href="#" onclick="openInAppBrowserBlank('http://www.sjogrens.org/home/about-the-foundation');"
           style="color:#DCDCF0;text-decoration:none">Explore Sjogrens Syndrome Foundation</a></button><br>
-        <span id="info-expl" class="button-text" style="text-decoration:none">
+        <span class="button-text">
           Learn more about the only national non-profit organization focused on Sjogrens in the US.
         </span>
     </div>
+    <!-- js for open website outside app -->
+    <script>
+     var ref = null;
+     function openInAppBrowserBlank(url)
+     {
+         try {
+     ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no');
+              ref.addEventListener('loadstop', LoadStop);
+              ref.addEventListener('exit', Close);
+         }
+         catch (err)
+         {
+             alert(err);
+         }
+     }
+     function LoadStop(event) {
+              if(event.url == "http://www.mypage.com/closeInAppBrowser.html"){
+                 // alert("fun load stop runs");
+                  ref.close();
+              }
+         }
+     function Close(event) {
+              ref.removeEventListener('loadstop', LoadStop);
+              ref.removeEventListener('exit', Close);
+         }
+    </script>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

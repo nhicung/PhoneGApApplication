@@ -270,6 +270,7 @@ p.section2{
 .donate-btn{
   color: #DCDCF0;
   background: #000080;
+  font-size: 22px;
 }
 
 .donate-btn:hover {
@@ -284,6 +285,7 @@ p.section2{
 .shop-btn{
   color: #DCDCF0;
   background: #5757D8;
+  font-size: 22px;
 }
 
 .shop-btn:hover{
@@ -298,6 +300,7 @@ p.section2{
 .expl-btn{
   color: #DCDCF0;
   background: #0505CD;
+  font-size: 22px;
 }
 
 .expl-btn:hover{
@@ -310,9 +313,10 @@ p.section2{
 }
 
 .button-text{
-  font-size: 10px;
+  font-size: 15px;
   margin-top: 10px;
   padding: 5px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .listsymptoms a{
