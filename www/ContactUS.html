@@ -62,24 +62,78 @@
         app.initialize();
     </script>
 
-    <div class="button11">
-        <button><a href="#">Contact APP Developers</a></button>
+    <div class="button1" style="text-align:center;">
+        <button class="ca-btn"><a href="#" style="color:#DCDCF0;text-decoration:none">
+          Call APP Developers</a></button>
     </div>
-    <div class="button11">
-        <button><a href="#">Contact Sjogrens Syndrome Foundation</a></button>
+    <div>
+        <p class="text1">Lingzhi Xi: lxi@knox.edu</p>
+        <p class="text1">Nhi Cung: nhcung@knox.edu</p>
+        <p class="text1">Minh Le: mqle@knox.edu</p>
     </div>
-
+    <div class="button" style="text-align:center;">
+        <button class="cf-btn"><a href="#" style="color:#DCDCF0;text-decoration:none">
+        Sjogrens Syndrome Foundation</a></button>
+    </div>
+    <div>
+        <p class="text1">10701 Parkridge Blvd<br>Suite 170<br>Reston, VA 20191</p>
+        <p class="text1">Toll Free: (800) 475-6473</p>
+        <p class="text1">Local call: (301) 530-4420</p>
+        <p class="text1">Fax: (301) 530-4415</p>
+        <p class="text2">More details please click <a href="#" onclick="openInAppBrowserBlank
+          ('https://www.sjogrens.org/home/about-the-foundation/contact-us');">
+          here</a></p>
+    </div>
     <style>
-        .button11{
-            color: white;
-            padding: 0;
-            border: none;
-            background: none;
-            outline: none;
-            text-align: center;
-            padding-bottom: 5vh;
+        .ca-btn {
+          color: #DCDCF0;
+          background: #5757D8;
+          font-size: 20px;
         }
-</style>
+        .cf-btn {
+          color: #DCDCF0;
+          background: #0505CD;
+          font-size: 20px;
+        }
+        .text1 {
+          text-transform:none;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        .text2 {
+          text-transform:none;
+          text-align: center;
+          font-size: 16px;
+        }
+    </style>
+    <!-- js for open website outside app -->
+    <script>
+     var ref = null;
+     function openInAppBrowserBlank(url)
+     {
+         try {
+     ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no');
+              ref.addEventListener('loadstop', LoadStop);
+              ref.addEventListener('exit', Close);
+         }
+         catch (err)
+         {
+             alert(err);
+         }
+     }
+     function LoadStop(event) {
+              if(event.url == "http://www.mypage.com/closeInAppBrowser.html"){
+                 // alert("fun load stop runs");
+                  ref.close();
+              }
+         }
+     function Close(event) {
+              ref.removeEventListener('loadstop', LoadStop);
+              ref.removeEventListener('exit', Close);
+         }
+    </script>
+
     <!-- Here begins the sidebar menu -->
     <div id="mySidenav" class="sidenav" onclick="closeNav()">
         <img src="img/Logo3.png" class="logo2">
