@@ -140,7 +140,7 @@ body {
     z-index: 1;
     top: 0;
     right:0;
-    background-color: #B1C0D1;
+    background-color: #F1F1F1;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 40px;
@@ -225,20 +225,20 @@ body {
     top: 13%;
     margin-left: 20%;
 }
-.section a { 
-    width: 294px; 
-} 
-.a:hover{ 
-    color:white; 
-    background: navy; 
+.section a {
+    width: 294px;
+}
+.a:hover{
+    color:white;
+    background: navy;
     font-size: 10px;
 }
-.content{ 
-  border:2px solid navy; 
-    border-radius: 8px; 
-  padding:10px; 
-    margin: 15px; 
-} 
+.content{
+  border:2px solid navy;
+    border-radius: 8px;
+  padding:10px;
+    margin: 15px;
+}
 
 .footer {
     background-color: #222;
