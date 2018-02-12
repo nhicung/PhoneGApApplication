@@ -55,13 +55,96 @@
     <div class="image">
         <h1>Useful Tips</h1>
     </div>
+    
+     <!--main sections  -->
+    
+    <p class= "intro1">
+        The SSF would like to thank Dona Frosio, a Sjögren’s patient and author of the Sjögren’s Self-Help booklet, and our publications committee for once again putting together a wonderful resource.
+    </p>
+    <p class = "intro2">
 
-        <p>
+        This resource is organized by symptom. Click the various symptoms below to read various coping strategies for living with Sjögren’s:
+    </p>
 
-            Good tips for you and your family!
+        <div class="dropdown">
+           <button onclick="myTips1()" class="dropbtn">Sjögren’s Tips</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="#home">Dry Eye</a>
+                    <a href="#about">Dry Mouth</a>
+                    <a href="#contact">Other Dryness</a>
+                    <a href="#contact">Diet & Food</a>
+                    <a href="#contact">Peripheral Neuropathy</a>
+                    <a href="#contact">Surgery</a>
+                </div>
+        </div>
 
 
-        </p>
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myTips1() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+
+        <div class="dropdown">
+           <button onclick="myTips2()" class="dropbtn">Survival Tips</button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a href="#home">General Sjögren’s Survival Tips</a>
+                    <a href="#about">Dry Mouth Survival Tips</a>
+                    <a href="#contact">Dry Eye Survival Tips</a>
+                    <a href="#contact">Dry Skin Survival Tips</a>
+                    <a href="#contact">Sun & Sjögren’s Survival Tips</a>
+                    <a href="#contact">Fatigue Survival Tips</a>
+                    <a href="#contact">Brain Fog Survival Tips</a>
+                    <a href="#contact">Sleep & Sjögren’s Survival Tips</a>
+                    <a href="#contact">Surgery & Sjögren’s Survival Tips</a>
+                    <a href="#contact">Reflux & Sjögren’s Survival Tips</a>
+                    <a href="#contact">Dry Nose & Sjögren’s Survival Tips</a>
+                    <a href="#contact">Dry Ear Survival Tips</a>
+                    
+                </div>
+        </div>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myTips2() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
