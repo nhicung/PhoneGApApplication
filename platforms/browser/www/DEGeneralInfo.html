@@ -28,7 +28,6 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
     <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -47,97 +46,40 @@
 
   <div class="fixedbar" id="barid">
     <!-- go back button -->
-    <span style="font-size:45px;color:#000080;position:relative;top:10px;left:10px;
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:10px;
     ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span>
     <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;position:relative;top:10px;left:255px;
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:255px;
     ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
   </div>
-    <div class="image">
-        <h1>Common Symptoms</h1>
+      <div class="image">
+        <h1>Dry Eyes</h1>
     </div>
-    
-    
-     <!-- main sections -->
-    
-    
-    <p class="intro3"> 
-        Sjögren's is a systemic disease, and its symptoms are felt throughout the entire body.
+         
+            <h2>General Information</h2>
+        
+
+            <p class = "intro4">
+
+        Millions of Americans suffer from dry eye. There are two main causes: decreased secretion of tears by the lacrimal (tear-producing) glands and loss of tears due to excess evaporation. Both can lead to ocular surface discomfort, often described as feelings of dryness, burning, a sandy/gritty sensation, or itchiness. Visual fatigue, sensitivity to light, and blurred vision are also characteristic of dry eye.
+            </p>
+            <p class = "text3">
+                Normal healthy tears contain a complex mixture of proteins and other components that are essential for ocular health and comfort (Figure 1). Tears are important because they:
     </p>
+            <p class = "text3"> 
+                • Provide nutrients and support the health of cells in the cornea.
+    </p>
+            <p class = "text3">
+                • Lubricate the ocular surface.
+    </p>
+            <p class = "text3">
+                • Protect the exposed surface of the eye from infections.
+    </p>
+            <p class = "text3">
+                Clear vision depends on even distribution of tears over the ocular surface.
+                For Sjögren’s patients, inflammation of tear-secreting glands reduces tear production, resulting in chronic dry eye. In addition, changes in the composition of tears contribute to dry eye (Figure 2). In people with dry eye, thin spots in the tear film may appear and the tears no longer adequately protect and support the health of ocular surface tissues.   
+            </p>
     
-    <div class="bodyimage">
-        <img src="bodyimage.jpg">
-    </div>
-
-         <div class="dropdown">
-           <button onclick="myFunction()" class="dropbtn">Dry Eyes</button>
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="DEGeneralInfo.html">General Information</a>
-                    <a href="DETreatment.html">Treatment</a>
-                    <a href="UsefulTips.html">Tips</a>
-                    <a href="LearnMore.html">Learn More</a>
-                </div>
-        </div>
-    
-
-
-    <script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-    </script>
-
-        <div class="dropdown">
-           <button onclick="myMouth()" class="dropbtn">Dry Mouth</button>
-                <div id="myDropdown1" class="dropdown-content">
-                    <a href="DMGeneralInfo.html">General Information</a>
-                    <a href="DMTreatment.html">Treatment</a>
-                    <a href="UsefulTips.html">Tips</a>
-                    <a href="LearnMore.html">Learn More</a>
-                </div>
-        </div>
-
-
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myMouth() {
-    document.getElementById("myDropdown1").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
@@ -148,7 +90,7 @@ window.onclick = function(event) {
     <div id="mySidenav" class="sidenav" onclick="closeNav()">
         <img src="img/Logo3.png" class="logo2">
         <a href="index.html">Home</a>
-        <a href="AllSymptoms.html">All Symptoms</a>
+        <a href="allsymptoms.html">All Symptoms</a>
         <a href="LearnMore.html">Learn More</a>
         <a href="ContactUS.html">Contact US</a>
     </div>

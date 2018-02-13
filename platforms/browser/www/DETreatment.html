@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Sjögrens Dictionary</title>
+</head>
+
+<body>
+
+  <div class="fixedbar" id="barid">
+    <!-- go back button -->
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:10px;
+    ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span>
+    <!-- sidebar menu button -->
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:255px;
+    ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
+  </div>
+      <div class="image">
+        <h1>Dry Eyes</h1>
+    </div>
+         
+            <h2>Treatment for Dry Eye Disease</h2>
+        
+
+            <p class = "intro4">
+
+        Treatment options for dry eye depend on its causes and severity, so it is important to be examined by an eye doctor who is trained to diagnose and treat ocular diseases. The doctor may use tests to assess tear production, tear stability, and tear distribution. A slit-lamp examination using dyes that temporarily stain unhealthy tissue will reveal any abnormality or damage to the ocular surface. These tests typically cause little discomfort and are performed in the doctor’s office.
+            </p>
+            <p class = "text3">
+                Artificial tears are available over the counter. They can provide temporary relief from dry eye symptoms. Artificial tears contain water, salts, and polymers but lack the proteins found in natural tears (Figure 3). Patients who frequently use drops should choose a brand without preservatives or one with special non-irritating preservatives. Artificial tears are used to treat mild forms of dry eye or to supplement other treatments.
+            </p>
+            <p class = "text3">
+                • Punctal occlusion blocks the small openings in the eyelid that normally drain tears away from the eye. Usually this is done by inserting plugs made of silicone or other materials into the openings. This simple procedure helps to retain the patient’s tears on the ocular surface for a longer time. It can improve symptoms and increase comfort for some patients.
+                </p>
+            <p class = "text3">
+                • Cyclosporine ophthalmic emulsion (Restasis®) treats an underlying cause of chronic dry eye by suppressing the inflammation that disrupts tear secretion. Many patients report a noticeable increase in tear production and comfort with continued use of Restasis®.
+                </p>    
+            <p class = "text3">
+                • Hydroxypropyl cellulose ophthalmic insert (Lacrisert®) is a preservative-free prescription insert that dissolves gently over the course of a day, continually lubricating and protecting the eye while reducing moderate to severe dry eye symptoms with one application daily into the pocket of the lower eyelid.
+                </p>
+            <p class = "text3">
+                • Topically applied corticosteroids (cortisone) are occasionally prescribed to treat acute episodes of inflammation in dry eye. The use of these medications should be limited in frequency and duration to avoid potential complications of glaucoma and cataract.
+            
+ 
+            </p>
+    <h2>Other Treatment Options and Considerations </h2>
+            <p class = "text3">
+                Cevimeline (Evoxac®) and pilocarpine (Salagen®) are medications taken orally to increase salivation in Sjögren’s syndrome patients. Recent studies have shown some improvement in dry eye symptoms; however, tear production was either not increased or not measured in these studies. These medications are approved for treating dry mouth; treatment for dry eye is considered an off-label indication for use.
+            </p>
+    
+            <p class = "text3">
+                Because excess evaporation of the tearfilm can occur when there is irritation of the eyelids (conditions known as blepharitis or meibomian eyelid gland dysfunction), it is often helpful to maintain eyelid hygiene by using warm compresses and eyelid massage. Any infections of the eyelid margin should be treated with appropriate antibiotics as prescribed by the patient’s physician. Allergy and certain skin disorders (such as rosacea) also can aggravate dry eye and should be treated appropriately.
+    </p>
+            <p class = "text3">
+                There is accumulating evidence to suggest that taking essential fatty acid supplements (Omega 3) by mouth may improve dry eye symptoms and signs. Further clinical trials are underway to confirm this potential benefit. Essential fatty acids are also available in flaxseed oil and fish oil supplements and in some over-the-counter products.
+    </p>
+            <p class = "text3">
+                Ongoing clinical trials of other dry eye treatments may eventually result in new FDA-approved treatments for stimulating the production of specific tear components in dry eye patients.
+    </p>
+    
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+
+    <!-- Here begins the sidebar menu -->
+    <div id="mySidenav" class="sidenav" onclick="closeNav()">
+        <img src="img/Logo3.png" class="logo2">
+        <a href="index.html">Home</a>
+        <a href="allsymptoms.html">All Symptoms</a>
+        <a href="LearnMore.html">Learn More</a>
+        <a href="ContactUS.html">Contact US</a>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+
+</html>

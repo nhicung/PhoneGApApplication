@@ -84,6 +84,13 @@ body {
     color: navy;
     top: 50%;
 }
+h2{
+    text-align: left;
+    text-transform: uppercase;
+    color: white;
+    background-color: navy;
+    
+}
 
 .image img{
     overflow: hidden;
@@ -419,7 +426,14 @@ body {
           text-align: center;
           font-size: 16px;
         }
-
+.intro4 {
+          text-transform:none;
+          text-align: left;
+          font-size: 16px;
+          font-weight: bold;
+          color: navy;
+          margin-left: 10px;
+        }
 
 /*introduction to common symptoms screen*/
 .intro3 {
@@ -428,6 +442,11 @@ body {
           font-size: 17px;
           font-weight: bold;
           color: navy;
+        }
+.text3 {
+          text-transform:none;
+          font-size: 16px;
+          margin-left: 10px;
         }
 
  /*common symptom screen body image*/
