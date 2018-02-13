@@ -85,11 +85,12 @@ body {
     top: 50%;
 }
 h2{
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     color: white;
     background-color: navy;
     font-size: 22px;
+    
 }
 
 .image img{
