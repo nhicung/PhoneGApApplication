@@ -378,7 +378,7 @@ h2{
     font-size: 20px;
     border: none;
     cursor: pointer;
-    width: 400px;
+    width: 100%;
     text-align: center;
 }
 
@@ -388,7 +388,7 @@ h2{
 
 .dropdown {
     position: relative;
-    display: inline-block;
+
 }
 
 .dropdown-content {
@@ -467,5 +467,5 @@ h2{
 .bodyimage img {
     width:20%;
     position: absolute;
-    
+
 }
