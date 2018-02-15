@@ -74,12 +74,12 @@ body {
 }
 
 .image h3{
-    font-size:25px;
+    font-size:28px;
     font-weight:bold;
     font-style: space mono;
-    margin:70px;
+    margin:60px;
     overflow:visible;
-    padding:0px 15px;
+    padding:0px 18px;
     text-align:right;
     color: navy;
     top: 50%;
