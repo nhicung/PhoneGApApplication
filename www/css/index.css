@@ -90,7 +90,7 @@ h2{
     color: white;
     background-color: navy;
     font-size: 22px;
-    
+
 }
 
 .image img{
@@ -157,10 +157,10 @@ h2{
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 24px;
     color: #000080;
     display: block;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .sidenav a:hover {
@@ -171,6 +171,13 @@ h2{
     height:180px;
     width:180px;
     margin: auto;
+}
+
+.logo4 {
+  height:65px;
+  width:65px;
+  margin: auto;
+  padding-left: 12px;
 }
 
 .topnav {
