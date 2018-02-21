@@ -30,7 +30,7 @@ body {
 
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:12px;
-    height:100%;
+    height: 100%;
     margin:0px;
     padding:0px;
     text-transform:uppercase;
@@ -61,6 +61,10 @@ body {
     }
 }
 
+.image {
+  width: 100%;
+  height: 100px;
+}
 .image h1{
     font-size:25px;
     font-weight:bold;
@@ -78,7 +82,7 @@ body {
     font-weight:bold;
     font-style: space mono;
     margin:60px;
-    overflow:visible;
+    overflow:hidden;
     padding:0px 18px;
     text-align:center;
     color: navy;
@@ -98,7 +102,7 @@ h2{
 
 .image img{
     overflow: hidden;
-    padding-right: 20px;
+    padding-right: 8px;
 }
 
 .event {
@@ -142,41 +146,8 @@ h2{
     position: fixed;
     top:0;
     width:100%;
+    height: 63px;
     background-color: white;
-}
-
-.navbar-bottom {
-	position: fixed;
-	width: 100%;
-	text-align: center;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 99;
-	height: 35px;
-	background: #000080;
-	padding: 15px 0;
-	box-shadow:  0 -4px 8px -6px #999;
-}
-
-.bar-center a i {
-	border: 2px solid #eee;
-	border-radius: 50%;
-	padding: 10px;
-	font-size: 15px;
-	margin-left: 22px;
-}
-
-.bar-center span {
-	position: relative;
-	left: -32px;
-	top: -20px;
-	background: #fff;
-	padding: 0px 6px;
-	border-radius: 50%;
-	color: #222;
-	font-weight: bold;
-	cursor: default;
 }
 
 .row {
@@ -314,10 +285,11 @@ h2{
     }
 }
 .image img{
+
     width:20%;
     position: absolute;
-    top: 13%;
-    margin-left: 20%;
+    top: 14%;
+    margin-left: 22%;
 }
 .section a {
     width: 90%;

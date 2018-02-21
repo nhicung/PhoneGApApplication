@@ -8,7 +8,7 @@ Table of Contents
 - Navbar
 - Side Nav
 - Navbar Bottom
-- Menu 
+- Menu
 - Slider
 - Featues
 - Product
@@ -19,7 +19,7 @@ Table of Contents
 - Shopping Cart
 - Checkout
 - Error 404
-- Footer   
+- Footer
 -------------------------------- */
 
 /* ------------------------------
@@ -39,7 +39,7 @@ body {
 	color: #777;
 	opacity: 0;
 }
- 
+
 body.all-loaded {
     opacity: 1;
 }
@@ -94,11 +94,11 @@ p {
 }
 
 .section {
-	padding: 35px 0;
+	padding: 15px 0;
 }
 
 .pages {
-	
+
 }
 
 .pages-head {
@@ -208,16 +208,16 @@ input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border: 1px solid #ccc;
   box-shadow: none;
-}	
-
-::-webkit-input-placeholder { 
-  color: #999;
-}
-::-moz-placeholder { 
-  color: #999;
 }
 
-:-ms-input-placeholder { 
+::-webkit-input-placeholder {
+  color: #999;
+}
+::-moz-placeholder {
+  color: #999;
+}
+
+:-ms-input-placeholder {
   color: #999;
 }
 :-moz-placeholder {
@@ -234,7 +234,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	padding-left: 15px;
 	padding-right: 15px;
 	line-height: 29px;
-	border: 1px solid #8e417a;
+	border: 1px solid #000080;
 	font-size: 12px;
 	color: #333;
 }
@@ -253,7 +253,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	opacity: 0.9;
 	box-shadow: none;
 }
-	
+
 
 /* ------------------------------
   Navbar
@@ -336,9 +336,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 .side-nav-panel {
 	text-align: left;
-	background: #ad5389; 
+	background: #ad5389;
     background: -webkit-linear-gradient(to top, #ad5389, #3c1053);
-    background: linear-gradient(to top, #ad5389, #3c1053); 
+    background: linear-gradient(to top, #ad5389, #3c1053);
 }
 
 .side-nav-panel .profil {
@@ -446,9 +446,11 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	right: 0;
 	z-index: 99;
 	height: 60px;
-	background: #451657;
+	background: #000080;
 	padding: 15px 0;
 	box-shadow:  0 -4px 8px -6px #999;
+	display: block;
+	overflow: hidden;
 }
 
 .navbar-bottom a i {
@@ -504,7 +506,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 .cart-menu .content h5 a {
 	color: #fff;
-} 
+}
 
 .cart-menu .content input {
 	width: 30px;
@@ -567,9 +569,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
   menus
 ---------------------------------*/
 .menus {
-  	background: #ad5389; 
+  	background: #ad5389;
     background: -webkit-linear-gradient(to top, #ad5389, #3c1053);
-    background: linear-gradient(to top, #ad5389, #3c1053); 
+    background: linear-gradient(to top, #ad5389, #3c1053);
 }
 
 .menus .close-icon {
@@ -706,7 +708,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .about-home .content {
-	padding: 35px 0;
+	padding: 10px 0;
+	top:200px;
 }
 
 .about-home .content-2 {
@@ -767,16 +770,16 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .features .content h5 {
 	font-size: 18px;
 	margin-top: 3px;
-	margin-bottom: 10px;										
+	margin-bottom: 10px;
 }
 
 /* ------------------------------
 	quote
 ---------------------------------*/
 .quote {
-	background: #ad5389; 
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389); 
-    background: linear-gradient(to right, #3c1053, #ad5389); 
+	background: #ad5389;
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
 	color: #eee;
 }
 
@@ -803,7 +806,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	padding: 0;
 	margin: 0 auto;
 	list-style: none;
-	text-align: center;	
+	text-align: center;
 	margin-bottom: 4px;
 }
 
@@ -952,7 +955,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 ---------------------------------*/
 .promo {
 	background: linear-gradient(
-      rgba(0, 0, 0, 0.72), 
+      rgba(0, 0, 0, 0.72),
       rgba(0, 0, 0, 0.72)
     ), url(../img/parallax.jpg) center no-repeat;
 	background-size: cover;
@@ -1156,9 +1159,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	margin-top: 0;
 }
 
-.comment-form input, 
+.comment-form input,
 .comment-form textarea {
-	
+
 }
 
 .comment-form .form-button .button-default {
@@ -1380,7 +1383,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .checkout-content h6 {
-	font-size: 13px !important;	
+	font-size: 13px !important;
 }
 
 .checkout-content .collapsible-body {
@@ -1534,9 +1537,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 /*loader custom color*/
 #fakeLoader {
-	background: #ad5389; 
+	background: #ad5389;
     background: -webkit-linear-gradient(to top, #ad5389, #3c1053);
-    background: linear-gradient(to top, #ad5389, #3c1053); 
+    background: linear-gradient(to top, #ad5389, #3c1053);
 }
 
 .spinner6 > div {
@@ -1565,7 +1568,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	font-size: 24px;
 	letter-spacing: 1px;
 	margin-bottom: 10px;
-	color: #8e417a;
+	color: #000080;
 }
 
 .social-media {
@@ -1595,4 +1598,4 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 .copyright span {
 	text-align: center;
-}	
+}
