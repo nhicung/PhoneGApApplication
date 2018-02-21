@@ -142,7 +142,7 @@ h2{
 }
 
 .fixedbar {
-    overflow:visible;
+    overflow:hidden;
     position: fixed;
     top:0;
     width:100%;
@@ -155,40 +155,6 @@ h2{
     margin-right: auto;
     margin-bottom: 20px;
 }
-
-.row .col .s4 {
-  width: 33.3333333333%;
-  margin-left: auto;
-  left: auto;
-  right: auto;
-}
-
-.row .col {
-  display: inline-block;
-  width: 100%
-  text-align: center;
-  box-sizing: border-box;
-  padding: 0 0.75rem;
-  padding-left: 10%;
-  padding-right: 10%;
-  min-height: 1px;
-}
-
-.fa-bars{
-  color: #fff;
-  font-size: 3em;
-}
-
-.fa-envelope-o{
-  color: #fff;
-  font-size: 3em;
-}
-
-.fa-home{
-  color: #fff;
-  font-size: 3em;
-}
-
 
 .sidenav {
     height: 100%;

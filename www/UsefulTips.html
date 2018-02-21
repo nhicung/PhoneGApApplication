@@ -38,7 +38,11 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
+    
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sjögrens Dictionary</title>
 </head>
 
@@ -51,9 +55,7 @@
     <!-- foundation logo -->
     <a href="index.html"><img src="img/ssf.png" style="position:relative;display:inline-block;
     height:40px;width:120px;left:80px;top:8px;"></a>
-    <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:130px;
-    ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
+
   </div><br>
     <div class="image">
         <h1>Useful Tips</h1>
@@ -155,30 +157,28 @@ window.onclick = function(event) {
     }
 </style>
 
+<!-- navbar bottom -->
+<div class="navbar-bottom">
+<div class="row">
+  <div class="col s4">
+    <a href="index.html"><i class="fa fa-home"></i></a>
+  </div>
+  <div class="col s4">
+    <a href="#animatedModal2" id="nav-menu"><i class="fa fa-bars"></i></a>
+  </div>
+  <div class="col s4">
+    <a href="ContactUS.html"><i class="fa fa-envelope-o"></i></a>
+  </div>
+</div>
+</div>
+<!-- end navbar bottom -->
+
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
 
-    <!-- Here begins the sidebar menu -->
-    <div id="mySidenav" class="sidenav" onclick="closeNav()">
-        <img src="img/Logo3.png" class="logo2">
-        <a href="index.html">Home</a>
-        <a href="allsymptoms.html">All Symptoms</a>
-        <a href="LearnMore.html">Learn More</a>
-        <a href="ContactUS.html">Contact US</a>
-        <br><br><br>
-        <a href="#" onclick="openInAppBrowserBlank('https://twitter.com/SjogrensOrg');"style=
-        "display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/twit.png" class="logo4" style="display:inline-block"></a>
-        <a href="#" onclick="openInAppBrowserBlank('https://www.youtube.com/user/sjogrenssyndromefnd');"
-        style="display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/yt.png" class="logo4" style="display:inline-block"></a>
-        <a href="#" onclick="openInAppBrowserBlank('https://www.facebook.com/SjogrensSyndromeFoundation/');"
-        style="display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/fcb.png" class="logo4" style="display:inline-block"></a>
-    </div>
     <!-- js for open website outside app -->
     <script>
      var ref = null;
@@ -204,21 +204,11 @@ window.onclick = function(event) {
               ref.removeEventListener('loadstop', LoadStop);
               ref.removeEventListener('exit', Close);
          }
+    function goBack() {
+             window.history.back();
+         }
     </script>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
-        }
-        function goBack() {
-            window.history.back();
-        }
 
-    </script>
 </body>
 
 </html>
