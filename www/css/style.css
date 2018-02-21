@@ -450,7 +450,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	padding: 15px 0;
 	box-shadow:  0 -4px 8px -6px #999;
 	display: block;
-	overflow: hidden;
+	overflow: visible;
 }
 
 .navbar-bottom a i {
