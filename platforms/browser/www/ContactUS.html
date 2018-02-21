@@ -70,9 +70,6 @@
     <!-- foundation logo -->
     <a href="index.html"><img src="img/ssf.png" style="position:relative;display:inline-block;
     height:40px;width:120px;left:80px;top:8px;"></a>
-    <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:130px;
-    ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
   </div><br>
     <div class="image">
         <h1>Contact US</h1>
@@ -252,24 +249,6 @@
          }
     </script>
 
-    <!-- Here begins the sidebar menu -->
-    <div id="mySidenav" class="sidenav" onclick="closeNav()">
-        <img src="img/Logo3.png" class="logo2">
-        <a href="index.html">Home</a>
-        <a href="allsymptoms.html">All Symptoms</a>
-        <a href="LearnMore.html">Learn More</a>
-        <a href="ContactUS.html">Contact US</a>
-        <br><br><br>
-        <a href="#" onclick="openInAppBrowserBlank('https://twitter.com/SjogrensOrg');"style=
-        "display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/twit.png" class="logo4" style="display:inline-block"></a>
-        <a href="#" onclick="openInAppBrowserBlank('https://www.youtube.com/user/sjogrenssyndromefnd');"
-        style="display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/yt.png" class="logo4" style="display:inline-block"></a>
-        <a href="#" onclick="openInAppBrowserBlank('https://www.facebook.com/SjogrensSyndromeFoundation/');"
-        style="display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/fcb.png" class="logo4" style="display:inline-block"></a>
-    </div>
     <!-- js for open website outside app -->
     <script>
      var ref = null;
@@ -297,14 +276,6 @@
          }
     </script>
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
-        }
         function goBack() {
             window.history.back();
         }
