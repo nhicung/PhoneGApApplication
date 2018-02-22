@@ -39,10 +39,29 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Sjögrens Dictionary</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sjögren's and Me - An Information Application About The Sjögren's Disease</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
 </head>
 
-<body>
+<body style="margin-bottom:100px;">
 
   <div class="fixedbar" id="barid">
     <!-- go back button -->
@@ -51,9 +70,6 @@
     <!-- foundation logo -->
     <a href="index.html"><img src="img/ssf.png" style="position:relative;display:inline-block;
     height:40px;width:120px;left:80px;top:8px;"></a>
-    <!-- sidebar menu button -->
-    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:130px;
-    ;cursor:pointer;display:inline-block" onclick="openNav()">&#9776; </span>
   </div><br>
       <div class="image">
         <h1>Sjögren's Tips</h1><br>
@@ -179,68 +195,115 @@ Vaginal dryness can be caused by Sjögren’s as well as by other conditions suc
 Hormones are a controversial topic and it is a personal choice. You will have to weigh the pros and cons with your gynecologist. Don’t be afraid to bring up the subject. You know what you are experiencing.
     </p>
 
+    <div class="navbar-bottom">
+  		<div class="row">
+  			<div class="col s4">
+  				<a href="index.html"><i class="fa fa-home" style="color: #fff;
+          font-size: 3em;"></i></a>
+  			</div>
+  			<div class="col s4">
+  				<a href="#animatedModal2" id="nav-menu"><i class="fa fa-bars" style="color: #fff;
+          font-size: 3em;"></i></a>
+  			</div>
+  			<div class="col s4">
+  				<a href="ContactUS.html"><i class="fa fa-envelope" style="color: #fff;
+          font-size: 3em;"></i></a>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- end navbar bottom -->
 
-
-
-
+    <!-- menu -->
+  	<div class="menus" id="animatedModal2">
+      <div class="close-animatedModal2 close-icon">
+  			<i class="fa fa-window-close"></i>
+  		</div>
+  		<div class="modal-content">
+  			<div class="container">
+  				<div class="row">
+  					<div class="col s4">
+  						<a href="index.html" class="button-link">
+  							<div class="menu-link">
+  								<div class="icon">
+  									<i class="fa fa-home"></i>
+  								</div>
+  								Home<br> Page
+  							</div>
+  						</a>
+  					</div>
+            <div class="col s4">
+  						<a href="Facts.html" class="button-link">
+  							<div class="menu-link">
+  								<div class="icon">
+  									<i class="fa fa-heart"></i>
+  								</div>
+  								Sjogren's<br> Facts
+  							</div>
+  						</a>
+  					</div>
+            <div class="col s4">
+  						<a href="UsefulTips.html" class="button-link">
+  							<div class="menu-link">
+  								<div class="icon">
+  									<i class="fa fa-eye"></i>
+  								</div>
+  								Useful<br> Tips
+  							</div>
+  						</a>
+  					</div>
+  				</div>
+  				<div class="row">
+            <div class="col s4">
+  						<a href="CommonSymptoms.html" class="button-link">
+  							<div class="menu-link">
+  								<div class="icon">
+  									<i class="fa fa-user"></i>
+  								</div>
+  								Common<br> Symptoms
+  							</div>
+  						</a>
+  					</div>
+  					<div class="col s4">
+  						<a href="LearnMore.html" class="button-link">
+  							<div class="menu-link">
+  								<div class="icon">
+  									<i class="fa fa-hourglass-half"></i>
+  								</div>
+  								Learn<br> More
+  							</div>
+  						</a>
+  					</div>
+            <div class="col s4">
+  						<a href="ContactUS.html" class="button-link">
+  							<div class="menu-link">
+  								<div class="icon">
+  									<i class="fa fa-envelope"></i>
+  								</div>
+  								Contact<br> US
+  							</div>
+  						</a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- end menu -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
-
-    <!-- Here begins the sidebar menu -->
-    <div id="mySidenav" class="sidenav" onclick="closeNav()">
-        <img src="img/Logo3.png" class="logo2">
-        <a href="index.html">Home</a>
-        <a href="allsymptoms.html">All Symptoms</a>
-        <a href="LearnMore.html">Learn More</a>
-        <a href="ContactUS.html">Contact US</a>
-        <br><br><br>
-        <a href="#" onclick="openInAppBrowserBlank('https://twitter.com/SjogrensOrg');"style=
-        "display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/twit.png" class="logo4" style="display:inline-block"></a>
-        <a href="#" onclick="openInAppBrowserBlank('https://www.youtube.com/user/sjogrenssyndromefnd');"
-        style="display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/yt.png" class="logo4" style="display:inline-block"></a>
-        <a href="#" onclick="openInAppBrowserBlank('https://www.facebook.com/SjogrensSyndromeFoundation/');"
-        style="display:inline-block;padding-left:3px;width:65px;height:65px;margin:auto">
-          <img src="img/fcb.png" class="logo4" style="display:inline-block"></a>
-    </div>
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.js"></script>
     <script>
-     var ref = null;
-     function openInAppBrowserBlank(url)
-     {
-         try {
-     ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no');
-              ref.addEventListener('loadstop', LoadStop);
-              ref.addEventListener('exit', Close);
-         }
-         catch (err)
-         {
-             alert(err);
-         }
-     }
-     function LoadStop(event) {
-              if(event.url == "http://www.mypage.com/closeInAppBrowser.html"){
-                 // alert("fun load stop runs");
-                  ref.close();
-              }
-         }
-     function Close(event) {
-              ref.removeEventListener('loadstop', LoadStop);
-              ref.removeEventListener('exit', Close);
-         }
-    </script>
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.body.style.backgroundColor = "white";
-        }
         function goBack() {
             window.history.back();
         }
