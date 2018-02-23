@@ -395,47 +395,33 @@ h2{
 
 /*dropdown menu for common symptom and useful tips screen*/
 
-.dropbtn {
-    background-color: navy;
+/*
+.btn .button {
+    background-color: navy;  Green 
+    border: 1px solid navy;
     color: white;
-    padding: 16px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
+    padding: 15px 32px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+*/
+
+
+
+
+.btn-group .button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
 }
 
-.dropbtn:hover, .dropbtn:focus {
+.btn-group .button:hover {
     background-color: navy;
 }
 
-.dropdown {
-    position: relative;
-
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    width: 400px;
-}
-
-.dropdown-content a {
-    color: navy;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown a:hover {background-color: #ddd}
-
-.show {display:block;}
 
  /*introduction to useful tips*/
 .intro1 {
