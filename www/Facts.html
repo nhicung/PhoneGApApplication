@@ -25,38 +25,25 @@
 </head>
 <body>
 
-	<!-- loader -->
-	<div id="fakeLoader"></div>
-	<!-- end loader -->
 
 	<!-- navbar top -->
-	<div class="navbar-top">
-		<!-- site brand	 -->
-		<div class="site-brand">
-			<a href="index.html"><h1 id="hh1">Sjögren's Dictionary</h1></a>
-		</div>
-		<!-- end site brand	 -->
-		<div class="side-nav-panel-right">
-			<a href="#" data-activates="slide-out-right" class="side-nav-left"><i class="fa fa-user"></i></a>
-		</div>
-	</div>
+	<div class="fixedbar" id="barid">
+ 
+    <!-- go back button -->
+ 
+    <span style="font-size:45px;color:#000080;position:relative;top:10px;left:10px;
+ 
+    ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span>
+ 
+    <!-- foundation logo -->
+ 
+    <a href="index.html"><img src="img/ssf.png" style="position:relative;display:inline-block;
+ 
+    height:40px;width:120px;left:80px;top:8px;"></a>
+ 
 	<!-- end navbar top -->
 
-	<!-- side nav right-->
-	<div class="side-nav-panel-right">
-		<ul id="slide-out-right" class="side-nav side-nav-panel collapsible">
-			<li class="profil">
-				<img src="img/profile.jpg" alt="">
-				<h2>John Doe</h2>
-			</li>
-			<li><a href="setting.html"><i class="fa fa-cog"></i>Settings</a></li>
-			<li><a href="about-us.html"><i class="fa fa-user"></i>About Us</a></li>
-			<li><a href="contact.html"><i class="fa fa-envelope-o"></i>Contact Us</a></li>
-			<li><a href="login.html"><i class="fa fa-sign-in"></i>Login</a></li>
-			<li><a href="register.html"><i class="fa fa-user-plus"></i>Register</a></li>
-		</ul>
-	</div>
-	<!-- end side nav right-->
+	
 
 	<!-- navbar bottom -->
 	<div class="navbar-bottom">
@@ -76,8 +63,8 @@
 
 	<!-- menu -->
 	<div class="menus" id="animatedModal2">
-		<div class="close-animatedModal2 close-icon">
-			<i class="fa fa-close"></i>
+    <div class="close-animatedModal2 close-icon">
+			<i class="fa fa-window-close"></i>
 		</div>
 		<div class="modal-content">
 			<div class="container">
@@ -88,159 +75,75 @@
 								<div class="icon">
 									<i class="fa fa-home"></i>
 								</div>
-								Home
+								Home<br> Page
 							</div>
 						</a>
 					</div>
-					<div class="col s4">
-						<a href="shop.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-shopping-bag"></i>
-								</div>
-								Shop
-							</div>
-						</a>
-					</div>
-					<div class="col s4">
-						<a href="shop-single.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-eye"></i>
-								</div>
-								Single Shop
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s4">
-						<a href="wishlist.html" class="button-link">
+          <div class="col s4">
+						<a href="Facts.html" class="button-link">
 							<div class="menu-link">
 								<div class="icon">
 									<i class="fa fa-heart"></i>
 								</div>
-								Wishlist
+								Sjogren's<br> Facts
 							</div>
 						</a>
 					</div>
-					<div class="col s4">
-						<a href="cart.html" class="button-link">
+          <div class="col s4">
+						<a href="UsefulTips.html" class="button-link">
 							<div class="menu-link">
 								<div class="icon">
-									<i class="fa fa-shopping-cart"></i>
+									<i class="fa fa-lightbulb"></i>
 								</div>
-								Cart
-							</div>
-						</a>
-					</div>
-					<div class="col s4">
-						<a href="checkout.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-credit-card"></i>
-								</div>
-								Checkout
+								Useful<br> Tips
 							</div>
 						</a>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col s4">
-						<a href="blog.html" class="button-link">	
+          <div class="col s4">
+						<a href="CommonSymptoms2.html" class="button-link">
 							<div class="menu-link">
 								<div class="icon">
-									<i class="fa fa-bold"></i>
+									<i class="fa fa-info"></i>
 								</div>
-								Blog
+								Common<br> Symptoms
 							</div>
 						</a>
 					</div>
 					<div class="col s4">
-						<a href="blog-single.html" class="button-link">	
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-file-text-o"></i>
-								</div>
-								Blog Single
-							</div>
-						</a>
-					</div>
-					<div class="col s4">
-						<a href="error404.html" class="button-link">
+						<a href="LearnMore.html" class="button-link">
 							<div class="menu-link">
 								<div class="icon">
 									<i class="fa fa-hourglass-half"></i>
 								</div>
-								404
+								Learn<br> More
+							</div>
+						</a>
+					</div>
+          <div class="col s4">
+						<a href="ContactUS.html" class="button-link">
+							<div class="menu-link">
+								<div class="icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								Contact<br> US
 							</div>
 						</a>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col s4">
-						<a href="testimonial.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-support"></i>
-								</div>
-								Testimonial
-							</div>
-						</a>
-					</div>
-					<div class="col s4">
-						<a href="about-us.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-user"></i>
-								</div>
-								About Us
-							</div>
-						</a>
-					</div>
-					<div class="col s4">
-						<a href="contact.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-envelope-o"></i>
-								</div>
-								Contact
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col s4">
-						<a href="setting.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-cog"></i>
-								</div>
-								Settings
-							</div>
-						</a>
-					</div>
-					<div class="col s4">
-						<a href="login.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-sign-in"></i>
-								</div>
-								Login
-							</div>
-						</a>
-					</div>
-					<div class="col s4">
-						<a href="register.html" class="button-link">
-							<div class="menu-link">
-								<div class="icon">
-									<i class="fa fa-user-plus"></i>
-								</div>
-								Register
-							</div>
-						</a>
-					</div>
-				</div>
+        <br><br><br><br>
+        <div>
+          <a href="#" onclick="openInAppBrowserBlank('https://twitter.com/SjogrensOrg');"style=
+          "display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/twit.png" class="logo4" style="display:inline-block"></a>
+          <a href="#" onclick="openInAppBrowserBlank('https://www.youtube.com/user/sjogrenssyndromefnd');"
+            style="display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/yt.png" class="logo4" style="display:inline-block"></a>
+          <a href="#" onclick="openInAppBrowserBlank('https://www.facebook.com/SjogrensSyndromeFoundation/');"
+            style="display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/fcb.png" class="logo4" style="display:inline-block"></a>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -267,7 +170,20 @@
 			color: navy;
 		}
 		#topp{
-			margin-top: 10vh;
+			width: 100%;
+            height: 100%;
+            max-height: 100%;
+            margin: 0;
+            padding: 0;
+            display: block;
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+		}
+		.lastdiv{
+			margin-bottom: 10vh;
+		}
+		#logo{
+			color: navy;
 		}
 	</style>
 
@@ -283,11 +199,11 @@
 					<img src="img/fact4.jpg" id="topp"></img>
 					<h3 id="f2">Demographics</h3>
 					<ul id="facts" ><li>The vast majority (96%) of Sjögren’s patients who completed the Sjögren's Syndrome survey were female. About one-third (32%) of respondents were 60 years of age or younger. On average, respondents said they were diagnosed with Sjögren’s over a decade ago (12.3 years mean).</li></ul>
-					<img src="img/fact1.jpg"></img>
+					<img src="img/fact1.jpg" id="topp"></img>
 					<div id="d1"><h3 id="f2">Sjögren's and Daily Activities</h3>
 					<ul id="facts" ><li>Over 7 in 10 Sjögren’s patients (71%) agreed that their Sjögren’s gets in the way of the things they need to do each day. Most commonly, nearly half (49%) of patients reported Sjögren’s having a great deal or a lot of negative impact on participating in hobbies, social activities, and extracurricular activities. Around a third say it negatively impacts making diet adjustments (35%), performing activities of daily life (34%), traveling or taking a vacation (34%), and overall mood (33%).</li>
 					<li>Nearly 7 in 10 people living with Sjögren’s (67%) agreed that they struggle to cope with their Sjögren’s. Even more agreed that living with Sjögren’s makes every day a challenge (86%). </li></ul></div>
-					<img src="img/fact3.jpg"></img>
+					<img src="img/fact3.jpg" id="topp"></img>
 					<h3 id="f2">Change at Home due to Sjögren's</h3>
 					<ul id="facts" ><li>The majority (79%) of Sjögren’s patients surveyed say their disease has led them to make at least one day-to-day change around the house, such as stopping or cutting back on housework (74%) or hiring additional service providers to help with housecleaning or child care (38%). </li></ul>
 					<div id="d1"><h3 id="f2">Sjögren's and Work Life</h3>
@@ -296,10 +212,10 @@
 					<ul id="facts" ><li>More than two in five (44%) patients said that Sjögren’s has had a great deal or a lot of negative impact on finding the correct word during conversation. Slightly fewer said Sjögren’s has had a great deal or a lot of negative impact on concentrating on more than one task at a time (38%) or remembering details at home or work (32%). Brain fog (55%) and forgetfulness (49%) were among symptoms that patients said have had a moderate to major impact on their lives in the last year.</li></ul>
 					<div id="d1"><h3 id="f2">Other Diagnosed Health Conditions for Sjögren’s Patients</h3>
 					<ul id="facts" ><li>There are many known comorbidities or manifestations of Sjögren’s that can occur in conjunction with the disease. Survey respondents reported having been diagnosed by a health care provider with an average of five other health conditions, including Gastroesophageal Reflux Disease (GERD) (45%), Raynaud’s (38%), Neuropathy (38%), Sinusitis (33%), Hypertension (31%), and Irritable Bowel Syndrome (31%). </li></ul></div>
-					<img src="img/fact2.jpg"></img>
+					<img src="img/fact2.jpg" id="topp"></img>
 					<h3 id="f2">Emotional Burden of Sjögren's</h3>
 					<ul id="facts" ><li>Three-in-four patients (74%) said living with Sjögren’s adds a significant emotional burden to their life, having at least some negative impact on relationships with friends and family (63%), sex life (59%), relationships with spouse/partner (55%), and caring for their children (19%). Sjögren’s patients 60 years of age and under were more likely than those over 60 to say living with Sjögren’s adds a significant emotional burden to their life (80% vs. 71%). Sjögren’s patients diagnosed with the disease 0-4 years ago were more likely than those diagnosed with Sjögren’s 5-9 years ago to say their overall mood has been negatively affected by Sjögren’s a lot or a great deal (42% vs. 36%).</li></ul>
-					<div id="d1"><h3 id="f2">Financial Impacts of Sjögren’s</h3>
+					<div id="d1" class="lastdiv"><h3 id="f2">Financial Impacts of Sjögren’s</h3>
 					<ul id="facts"><li>Two in three (66%) Sjögren’s patients said living with Sjögren’s adds a significant financial burden to their life. Sjögren’s patients 60 years of age and under reported spending more money, on average, on treatments and were more likely than those over 60 to say living with Sjögren’s adds a significant financial burden to their life (72% vs. 63%). When asked how much money they spent on different types of medical expenses in the past 12 months, patients said they spent the most, on average, on dental care followed by prescription medications, and healthcare appointments/co-payments.</li></ul></div>
 				</div>
 			</div>
@@ -308,26 +224,7 @@
 	<!-- end about-home -->
 
 	
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="about-us-foot">
-				<h6>Cools</h6>
-				<p>is a lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit.</p>
-			</div>
-			<div class="social-media">
-				<a href=""><i class="fa fa-facebook"></i></a>
-				<a href=""><i class="fa fa-twitter"></i></a>
-				<a href=""><i class="fa fa-google"></i></a>
-				<a href=""><i class="fa fa-linkedin"></i></a>
-				<a href=""><i class="fa fa-instagram"></i></a>
-			</div>
-			<div class="copyright">
-				<span>© 2018 All Right Reserved</span>
-			</div>
-		</div>
-	</div>
-	<!-- end footer -->
+	
 	
 	<!-- scripts -->
 	<script src="js/jquery.min.js"></script>
@@ -339,6 +236,37 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/portfolio.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+     var ref = null;
+     function openInAppBrowserBlank(url)
+     {
+         try {
+     ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no');
+              ref.addEventListener('loadstop', LoadStop);
+              ref.addEventListener('exit', Close);
+         }
+         catch (err)
+         {
+             alert(err);
+         }
+     }
+     function LoadStop(event) {
+              if(event.url == "http://www.mypage.com/closeInAppBrowser.html"){
+                 // alert("fun load stop runs");
+                  ref.close();
+              }
+         }
+     function Close(event) {
+              ref.removeEventListener('loadstop', LoadStop);
+              ref.removeEventListener('exit', Close);
+         }
+    </script>
+    <script>
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
 
 </body>

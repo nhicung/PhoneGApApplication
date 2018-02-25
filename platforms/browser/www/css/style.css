@@ -723,7 +723,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	background: #8e417a;
 	border-radius: 50%;
 	font-size: 32px;
-	color: #fff;
+	color: navy;
 	line-height: 83px;
 	margin-bottom: 13px;
 
