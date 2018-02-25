@@ -378,49 +378,6 @@ h2{
     background-color: white;
     overflow: hidden;
 }
-=======
-.button {
-    background-color: n; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    width: 50%;
-}
-
-/*dropdown menu for common symptom and useful tips screen*/
-
-/*
-.btn .button {
-    background-color: navy;  Green 
-    border: 1px solid navy;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-}
-*/
-
-
-
-
-.btn-group .button:not(:last-child) {
-    border-bottom: none; /* Prevent double borders */
-}
-
-.btn-group .button:hover {
-    background-color: navy;
-}
 
 
  /*introduction to useful tips*/
