@@ -2,7 +2,7 @@ $(function(){
 	'use-strict';
 
 	// body
-	$("body").addClass('all-loaded'); 
+	$("body").addClass('all-loaded');
 
 	// side nav left
 	$(".side-nav-left").sideNav({
@@ -14,7 +14,7 @@ $(function(){
 
 	// menu cart
 	$("#cart-menu").animatedModal();
-	
+
 	// menu nav
 	$("#nav-menu").animatedModal({
 		modalTarget: 'animatedModal2'
@@ -53,7 +53,7 @@ $(function(){
 
 	// loader
     $("#fakeLoader").fakeLoader({
-      
+
       zIndex: 999,
       spinner: 'spinner6'
 
@@ -67,5 +67,5 @@ $(function(){
     // select
     $('select').material_select();
 
-     
+
 });

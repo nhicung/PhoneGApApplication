@@ -150,7 +150,7 @@
 						<a href="UsefulTips.html" class="button-link">
 							<div class="menu-link">
 								<div class="icon">
-									<i class="fa fa-eye"></i>
+									<i class="fa fa-lightbulb"></i>
 								</div>
 								Useful<br> Tips
 							</div>
@@ -162,7 +162,7 @@
 						<a href="CommonSymptoms.html" class="button-link">
 							<div class="menu-link">
 								<div class="icon">
-									<i class="fa fa-user"></i>
+									<i class="fa fa-info"></i>
 								</div>
 								Common<br> Symptoms
 							</div>
@@ -184,11 +184,23 @@
 								<div class="icon">
 									<i class="fa fa-envelope"></i>
 								</div>
-								Contact<br> US
+								Contact US
 							</div>
 						</a>
 					</div>
 				</div>
+        <br><br><br><br>
+        <div>
+          <a href="#" onclick="openInAppBrowserBlank('https://twitter.com/SjogrensOrg');"style=
+          "display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/twit.png" class="logo4" style="display:inline-block"></a>
+          <a href="#" onclick="openInAppBrowserBlank('https://www.youtube.com/user/sjogrenssyndromefnd');"
+            style="display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/yt.png" class="logo4" style="display:inline-block"></a>
+          <a href="#" onclick="openInAppBrowserBlank('https://www.facebook.com/SjogrensSyndromeFoundation/');"
+            style="display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/fcb.png" class="logo4" style="display:inline-block"></a>
+        </div>
 			</div>
 		</div>
 	</div>
@@ -200,7 +212,7 @@
      function openInAppBrowserBlank(url)
      {
          try {
-     ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no');
+           ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no');
               ref.addEventListener('loadstop', LoadStop);
               ref.addEventListener('exit', Close);
          }
