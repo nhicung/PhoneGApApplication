@@ -62,7 +62,6 @@ h6 {
 
 h1 {
 	font-size: 32px;
-	color: navy;
 }
 
 h2 {
@@ -721,10 +720,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
 .about-home .content i {
 	width: 85px;
 	height: 85px;
-	background: navy;
+	background: #8e417a;
 	border-radius: 50%;
 	font-size: 32px;
-	color: #fff;
+	color: navy;
 	line-height: 83px;
 	margin-bottom: 13px;
 
