@@ -778,9 +778,9 @@ textarea.materialize-textarea:focus:not([readonly]) {
 	quote
 ---------------------------------*/
 .quote {
-	background: #ad5389;
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    background: linear-gradient(to right, #3c1053, #ad5389);
+	background: #A0A0FF;
+    background: -webkit-linear-gradient(to right, navy, #A0A0FF);
+    background: linear-gradient(to right, navy, #A0A0FF);
 	color: #eee;
 }
 
