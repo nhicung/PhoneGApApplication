@@ -570,9 +570,10 @@ textarea.materialize-textarea:focus:not([readonly]) {
   menus
 ---------------------------------*/
 .menus {
-  	background: #000080;
-    background: -webkit-linear-gradient(to top, #0101D0, #000080);
-    background: linear-gradient(to top, #0101D0, #000080);
+	background: #A0A0FF;
+    background: -webkit-linear-gradient(to right, navy, #A0A0FF);
+    background: linear-gradient(to right, navy, #A0A0FF);
+	color: #eee;
 }
 
 .menus .close-icon {
