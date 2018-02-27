@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sjögren's and Me - An Information Application About The Sjögren's Disease</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body style="margin-bottom:100px;">
+
+  <div class="fixedbar" id="barid">
+    <!-- go back button -->
+    <span style="font-size:45px;color:#000080;position:relative;top:8px;left:10px;
+    ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span>
+    <!-- foundation logo -->
+    <a href="index.html"><img src="img/ssf.png" style="position:relative;display:inline-block;
+    height:40px;width:120px;left:80px;top:8px;"></a>
+  </div><br>
+      <div class="image">
+        <h1>Fatigue</h1><br>
+    </div>
+
+            <h2>Treatment & Diagnosis</h2><br>
+ <p class = "text3">
+            Fatigue is a characteristic of both disorders as well, but it is difficult to differentiate the fatigue of Sjögren’s from that of fibromyalgia, except by “the company it keeps.” By this I mean that if you have overall symptoms of fibromyalgia (pain in many areas, sleep problems, sensitivity to brightness of lights, noises, odors, etc), then the fatigue you are experiencing is likely more due to the fibromyalgia, whereas if there are no other symptoms of fibromyalgia and you primarily are experiencing symptoms of Sjögren’s, then the fatigue is more likely due to the Sjögren’s. 
+    </p>
+
+    <p class = "intro4">
+        This is a revival of an essay I wrote ten years ago, originally entitled 11 Types of Fatigue. I’ve been asked by the Sjögren’s Foundation to give it new life. I thank them for the opportunity and hope that in the ten years that have passed since the original essay, there is increased acknowledgment of fatigue as a major factor in Sjögren’s. I’ve decided to add two new types of fatigue to the list, which is by no means meant to be exhaustive.
+    </p>
+    <img src="img/13_types.webp" align="auto" margin: "90%" class="img1" /  >
+    <p class = "text3">
+        A quick update: The friend mentioned below was my first friend with Sjögren’s and as such, has always been very special to me. We still speak in a kind of shorthand, as I do with most if not all of my Sjögren’s friends. The friends I have made over the years are the only good outcome of this disease. As a group, we understand what it means to say that we are ‘fine’.  We know that when we say we are “tired”, it means really tired, i.e. that something is going on, something out of the ordinary, beyond the everyday feelings of fatigue. ‘How are you?’ is not a question in our culture. It is a greeting. As such, it deserves a real answer only in those circumstances where there is an understanding that the person asking truly wants to know.
+    </p>
+    <p class = "text3">
+        For those of you who haven’t seen it, here is most of the original article with a few additions and revisions:
+    </p>
+    <p class = "text3">
+        "How are you?" I asked a friend who has Sjögren’s. "Tired," she said, "how are you?" "Tired," I replied, knowing we understood each other. We were talking about a special brand of fatigue. Later that day, a friend who did not have Sjögren’s asked me the same question. "How are you?" she said. "Fine" I responded, thinking it was the simpler way to answer a basically rhetorical question.
+    </p>
+    <p class = "text3">
+        Not everyone with Sjögren’s suffers from fatigue, but many of us do. According to a 2012 survey done by the SSF, fatigue was the third most prevalent and disabling symptom of Sjögren’s. Fatigue has been a problem more disabling than dry eyes or dry mouth for me. I long for normal energy and the ability to sustain activity, any activity. I long for the kind of fatigue that gets better with a good night's sleep. I want to be able to do things spontaneously. I wish I did not have to pace myself or plan rest stops. I wish that I could just get up and go, but, reluctantly and somewhat resentfully, I know that fatigue is a permanent part of my life. Having decided that if you must live in a particular landscape, you should learn the subtleties of the territory. I've come up with the following subtypes. Your experience may vary:
+    </p>
+    <p class = "intro4">
+        Basic fatigue
+    </p>
+    <p class = "text3">
+        1. This is the inherent fatigue that I attribute to the inflammatory, autoimmune nature of Sjögren’s. It's with me all the time. It differs from normal fatigue in that you don't have to do anything to deserve it. It can vary from day to day but is always there. For me, there appears to be a correlation between this kind of fatigue and sed rate (ESR). When one goes up, so does the other. I don’t know how often this phenomenon occurs. I could also call this my baseline fatigue, which fluctuates and gets better or worse. All of the following are superimposed on this basic fatigue.
+    </p>
+    <p class = "intro4">
+        Rebound fatigue
+    </p>
+    <p class = "text3">
+        2. If I push myself too far and ignore the cues my body is sending me to stop and rest, my body will fight back. When I do more than I should, the result is an immobilizing fatigue. It comes on after the fact, i.e., do too much one day and feel it the next. If I push myself today, I very likely will have to cancel everything tomorrow. An extended period of doing more than I should will almost certainly cause a flare.
+    </p>
+    <p class = "intro4">
+        Sudden fatigue
+    </p>
+    <p class = "text3">
+        3. This 'crumple and fold' phenomenon makes me resemble a piece of laundry. It comes on suddenly, and I have to stop whatever I'm doing and just sit down (as soon as I can). It can happen anywhere, at any time. It is the kind of fatigue that makes me shut off the computer in mid-sentence. It is visible to those who are observant and know what to look for, even though I make gargantuan efforts to disguise the fact that it is happening.
+    </p>
+    <p class = "intro4">
+        Weather related fatigue
+    </p>
+    <p class = "text3">
+        4. Not everyone has this particular talent, but I can tell that the barometric pressure is dropping while the sky remains blue and cloudless. I feel a sweeping wave, a malaise, that sometimes lifts just after the rain or snow has started. Likewise, I know when a weather front is moving away, even while torrents of water are falling from the sky. I feel a lightening in my body and begin to have more energy. This kind of fatigue is accompanied by an increase in muscle aches and joint pain.
+    </p>
+    <p class = "intro4">
+        Molten lead phenomenon
+    </p>
+    <p class = "text3">
+        5. This fatigue is present when I open my eyes in the morning and know that it is going to be a particularly bad day. It feels as if someone has poured molten lead in my head and on all my limbs while I slept. My muscles and joints hurt, and doing anything is like walking with heavy weights. It is often associated with increased symptoms of fibromyalgia and sometimes helped by heat and massage.
+    </p>
+    <p class = "intro4">
+        Tired-wired
+    </p>
+    <p class = "text3">
+        6.Tired-wired is a feeling that comes from certain medications, such as prednisone, too much caffeine, or too much excitement or perhaps it is just a function of Sjögren’s. My body is tired but my mind wants to keep going and won’t let my body rest.
+    </p>
+    <p class = "intro4">
+        Flare-related fatigue
+    </p>
+    <p class = "text3">
+        7. Flare-related fatigue is an unpredictable state of increased fatigue that can last for days or weeks. It may be caused by an increase in disease activity or an undetected infection. If the latter, it either resolves on its own, or eventually presents other signs and symptoms that can be diagnosed. Additional rest is essential to deal with this kind of fatigue, but rest alone will not necessarily improve it or make it go away. Once a flare begins, it is impossible to predict where it will go or how long it will last.
+    </p>
+    <p class = "intro4">
+        Fatigue induced by other physical conditions
+    </p>
+    <p class = "text3">
+        8. Fatigue related to other physical causes, such as thyroid problems or anemia superimposed on Sjögren’s. This kind of fatigue makes you feel that you are climbing a steep hill when you are really walking on level ground. It resolves once the underlying organic condition is diagnosed and treated. Thyroid problems and anemia are both common among Sjögren’s patients, but many other kinds of fatigue may be superimposed.
+    </p>
+    <p class = "intro4">
+        Fatigue that impairs concentration
+    </p>
+    <p class = "text3">
+        9. Fatigue that impairs concentration precludes thought, makes me too tired to talk, think or read. Fatigue robs me of memory and encloses me in a fog of cotton wool so thick I can't find my way out until the fog miraculously lifts. For me, brain fog goes hand-in-hand with other kinds of pernicious fatigue.
+    </p>
+    <p class = "intro4">
+        Stress, distress, anxiety or depression
+    </p>
+    <p class = "text3">
+        10. Stress, distress, anxiety or depression all can create a leaden kind of emotional fatigue that can be as exhausting as one due to physical causes. Although some people do not associate their increased fatigue with emotional states, many are aware of the effects of increased anxiety and depression, even if they cannot control what they feel. Intense emotion is very draining. Stress, anxiety and depression all are known to disrupt sleep.
+    </p>
+    <p class = "intro4">
+        Fatigue that comes from not sleeping well
+    </p>
+    <p class = "text3">
+        11. Some people with Sjögren’s have trouble both getting to sleep and staying asleep. Some wake up in the morning feeling as if they had never slept at all. Many aspects of Sjögren’s affect sleep: being too dry, in too much pain or malaise; multiple trips to the bathroom, the need for water or to put in eye ointment all deter a good sleep. Lack of restorative sleep increases fatigue.
+    </p>
+    <p class = "text3">
+        And two new ones:
+    </p>
+      <p class = "intro4">
+          Fatigue that comes with normal aging 
+    </p>
+    <p class = "text3">
+        12. I’m old enough for Medicare now and my friends are more tired too, although they seem to be able to do two or three or even four times what I can do on any given day. In fact, the gap between what they can do and what I can do just seems to be growing, despite my best efforts. It’s been a long time since I tried to keep up, but it still hurts that I can’t.
+    </p>
+      <p class = "intro4">
+          Chronic Illness Fatigue
+    </p>
+    <p class = "text3">
+        13. Fatigue that comes from a chronic illness that just won’t quit. We’ve all heard the expression “sick and tired of being sick and tired” and that phrase truly captures what many of us feel. I would take it one step further. There’s a fatigue that comes with the uncertainty of a chronic disease. It’s a debilitating fatigue born of never knowing what will come next. The chronicity of Sjögren’s can wear me down and I have to make special attempts not to let it. When these attempts don’t work, I wait a while and try to find something else that distracts me from my illness. 
+    </p>
+    <p class = "text3">
+        It's difficult to explain the unnatural quality and intensity of this fatigue to someone whose only experience has been with what is normal. We're not talking about the same stuff. It’s apples and artichokes. Sjögren’s fatigue is pervasive. It assaults everything I do. There isn’t a part of my life that hasn’t been touched by it. It is there even on my happiest days.
+    </p>
+    <p class = "text3">
+        Because people don’t understand, it’s often misinterpreted. "Is it depression?" a health care professional who didn't know much about Sjögren’s asked me. I tensed. Was he saying it was all in my head? I began to get angry but then gave him the benefit of the doubt. I put my first reaction aside and decided he was trying to understand. I was relating something outside his frame of reference, and he was attempting to find a point with which he could identify.
+    </p>
+    <p class = "text3">
+        When you describe Sjögren’s fatigue to someone who has never experienced it, you are asking him or her to think outside the box. You want them to understand an experience that is common to those who have Sjögren’s and many other autoimmune diseases but rare otherwise. Perhaps their first reaction will be negation or denial. While it’s always difficult to encounter expressions of disbelief, it is not uncommon.  I tried to see it as an opportunity to educate.
+    </p>
+    <p class = "text3">
+        "No," I said to the doctor who asked about depression, "think of it as a never-ending flu that varies in intensity but never goes away." He grimaced.
+    </p><br>
+
+            
+
+                <!-- navbar bottom -->
+            	<div class="navbar-bottom">
+            		<div class="row">
+            			<div class="col s4">
+            				<a href="index.html"><i class="fa fa-home" style="color: #fff;
+                    font-size: 3em;"></i></a>
+            			</div>
+            			<div class="col s4">
+            				<a href="#animatedModal2" id="nav-menu"><i class="fa fa-bars" style="color: #fff;
+                    font-size: 3em;"></i></a>
+            			</div>
+            			<div class="col s4">
+            				<a href="ContactUS.html"><i class="fa fa-envelope" style="color: #fff;
+                    font-size: 3em;"></i></a>
+            			</div>
+            		</div>
+            	</div>
+            	<!-- end navbar bottom -->
+
+              <!-- menu -->
+            	<div class="menus" id="animatedModal2">
+    <div class="close-animatedModal2 close-icon">
+			<i class="fa fa-window-close"></i>
+		</div>
+		<div class="modal-content">
+			<div class="container">
+				<div class="row">
+					<div class="col s4">
+						<a href="index.html" class="button-link">
+							<div class="menu-link">
+								<div class="icon">
+									<i class="fa fa-home"></i>
+								</div>
+								Home<br> Page
+							</div>
+						</a>
+					</div>
+          <div class="col s4">
+						<a href="Facts.html" class="button-link">
+							<div class="menu-link">
+								<div class="icon">
+									<i class="fa fa-heart"></i>
+								</div>
+								Sjogren's<br> Facts
+							</div>
+						</a>
+					</div>
+          <div class="col s4">
+						<a href="UsefulTips2.html" class="button-link">
+							<div class="menu-link">
+								<div class="icon">
+									<i class="fa fa-lightbulb"></i>
+								</div>
+								Useful<br> Tips
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+          <div class="col s4">
+						<a href="CommonSymptoms2.html" class="button-link">
+							<div class="menu-link">
+								<div class="icon">
+									<i class="fa fa-info"></i>
+								</div>
+								Common<br> Symptoms
+							</div>
+						</a>
+					</div>
+					<div class="col s4">
+						<a href="LearnMore.html" class="button-link">
+							<div class="menu-link">
+								<div class="icon">
+									<i class="fa fa-hourglass-half"></i>
+								</div>
+								Learn<br> More
+							</div>
+						</a>
+					</div>
+          <div class="col s4">
+						<a href="ContactUS.html" class="button-link">
+							<div class="menu-link">
+								<div class="icon">
+									<i class="fa fa-envelope"></i>
+								</div>
+								Contact<br> US
+							</div>
+						</a>
+					</div>
+				</div>
+        <br><br><br><br>
+        <div>
+          <a href="#" onclick="openInAppBrowserBlank('https://twitter.com/SjogrensOrg');"style=
+          "display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/twit.png" class="logo4" style="display:inline-block"></a>
+          <a href="#" onclick="openInAppBrowserBlank('https://www.youtube.com/user/sjogrenssyndromefnd');"
+            style="display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/yt.png" class="logo4" style="display:inline-block"></a>
+          <a href="#" onclick="openInAppBrowserBlank('https://www.facebook.com/SjogrensSyndromeFoundation/');"
+            style="display:inline-block;padding-left:8%;width:100px;height:100px;margin:auto">
+            <img src="img/fcb.png" class="logo4" style="display:inline-block"></a>
+        </div>
+			</div>
+		</div>
+	</div>
+            	<!-- end menu -->
+
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
