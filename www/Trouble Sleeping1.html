@@ -1,98 +1,98 @@
 @@ -0,0 +1,278 @@
-<!DOCTYPE html> 
-<!-- 
-    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved. 
- 
-    Licensed to the Apache Software Foundation (ASF) under one 
-    or more contributor license agreements.  See the NOTICE file 
-    distributed with this work for additional information 
-    regarding copyright ownership.  The ASF licenses this file 
-    to you under the Apache License, Version 2.0 (the 
-    "License"); you may not use this file except in compliance 
-    with the License.  You may obtain a copy of the License at 
- 
-    http://www.apache.org/licenses/LICENSE-2.0 
- 
-    Unless required by applicable law or agreed to in writing, 
-    software distributed under the License is distributed on an 
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
-     KIND, either express or implied.  See the License for the 
-    specific language governing permissions and limitations 
-    under the License. 
---> 
-<html> 
- 
-<head> 
-    <meta charset="utf-8" /> 
-    <meta name="format-detection" content="telephone=no" /> 
-    <meta name="msapplication-tap-highlight" content="no" /> 
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" /> 
-    <!-- This is a wide open CSP declaration. To lock this down for production, see below. --> 
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <!-- Good default declaration: 
-    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication 
-    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly 
-    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this: 
-        * Enable inline JS: add 'unsafe-inline' to default-src 
-        * Enable eval(): add 'unsafe-eval' to default-src 
-    * Create your own at http://cspisawesome.com 
-    --> 
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> --> 
- 
-    <link rel="stylesheet" type="text/css" href="css/index.css" /> 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <title>Sjögren's and Me - An Information Application About The Sjögren's Disease</title> 
-    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1"> 
-    <meta name="mobile-web-app-capable" content="yes"> 
-    <meta name="apple-mobile-web-app-capable" content="yes"> 
-    <meta name="apple-touch-fullscreen" content="yes"> 
-    <meta name="HandheldFriendly" content="True"> 
- 
-    <link rel="stylesheet" href="css/materialize.css"> 
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="css/normalize.css"> 
-    <link rel="stylesheet" href="css/owl.carousel.css"> 
-    <link rel="stylesheet" href="css/owl.theme.css"> 
-    <link rel="stylesheet" href="css/owl.transitions.css"> 
-    <link rel="stylesheet" href="css/fakeLoader.css"> 
-    <link rel="stylesheet" href="css/animate.css"> 
-    <link rel="stylesheet" href="css/magnific-popup.css"> 
-    <link rel="stylesheet" href="css/style.css"> 
-    <link rel="shortcut icon" href="img/favicon.png"> 
-</head> 
- 
-<body style="margin-bottom:100px;"> 
- 
-  <div class="fixedbar" id="barid"> 
-    <!-- go back button --> 
-    <span style="font-size:45px;color:#000080;position:relative;top:10px;left:10px; 
-    ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span> 
-    <!-- foundation logo --> 
-    <a href="index.html"><img src="img/ssf.png" style="position:relative;display:inline-block; 
-    height:40px;width:120px;left:80px;top:8px;"></a> 
- 
-  </div><br> 
-    <div class="image"> 
-        <h1>Trouble Sleeping</h1> 
-    </div> 
- 
- 
-     <!-- main sections --> 
- 
- 
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sjögren's and Me - An Information Application About The Sjögren's Disease</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1  maximum-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="HandheldFriendly" content="True">
+
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+
+<body style="margin-bottom:100px;">
+
+  <div class="fixedbar" id="barid">
+    <!-- go back button -->
+    <span style="font-size:45px;color:#000080;position:relative;top:10px;left:10px;
+    ;cursor:pointer;display:inline-block" onclick="goBack()">&#8592; </span>
+    <!-- foundation logo -->
+    <a href="index.html"><img src="img/ssf.png" style="position:relative;display:inline-block;
+    height:40px;width:120px;left:80px;top:8px;"></a>
+
+  </div><br>
+    <div class="image">
+        <h1>Trouble Sleeping</h1>
+    </div>
+
+
+     <!-- main sections -->
+
+
   <div class="section features bg-second" style="margin-bottom:65px;">
 		<div class="container">
 			<div class="row">
 				<div class="col s6" style="padding:0 0em;">
-					<a href="#CommonSymptoms2.html"><div class="content">
+					<a href="CommonSymptoms2.html"><div class="content">
 						<i class="fa fa-lightbulb"></i>
 						<h5>Sjögren's<br>Tips</h5>
 					</div></a>
 				</div>
 				<div class="col s6" style="padding:0 0em;">
-					<a href="#UsefulTips.html"><div class="content">
+					<a href="UsefulTips2.html"><div class="content">
 						<i class="fa fa-lightbulb"></i>
 						<h5>Survival<br> Tips</h5>
 					</div></a>
@@ -100,43 +100,43 @@
 			</div>
 		</div>
 	</div>
-     
-     
-<style> 
-    .img1 { 
-      width:100px; 
-      height:200px; 
-      transition: all 0.6s; 
-    } 
- 
-    .img1:hover { 
-      transform: scale(1.7); 
-      -ms-transform: scale(1.7); 
-      -webkit-transform: scale(1.7); 
-      -moz-transform: scale(1.7); 
-      overflow: visible; 
-    } 
- 
-</style> 
-<!-- navbar bottom --> 
-<div class="navbar-bottom"> 
-<div class="row"> 
-  <div class="col s4"> 
-    <a href="index.html"><i class="fa fa-home" style="color: #fff; 
-    font-size: 3em;"></i></a> 
-  </div> 
-  <div class="col s4"> 
-    <a href="#animatedModal2" id="nav-menu"><i class="fa fa-bars" style="color: #fff; 
-    font-size: 3em;"></i></a> 
-  </div> 
-  <div class="col s4"> 
-    <a href="ContactUS.html"><i class="fa fa-envelope" style="color: #fff; 
-    font-size: 3em;"></i></a> 
-  </div> 
-</div> 
-</div> 
-<!-- end navbar bottom --> 
- 
+
+
+<style>
+    .img1 {
+      width:100px;
+      height:200px;
+      transition: all 0.6s;
+    }
+
+    .img1:hover {
+      transform: scale(1.7);
+      -ms-transform: scale(1.7);
+      -webkit-transform: scale(1.7);
+      -moz-transform: scale(1.7);
+      overflow: visible;
+    }
+
+</style>
+<!-- navbar bottom -->
+<div class="navbar-bottom">
+<div class="row">
+  <div class="col s4">
+    <a href="index.html"><i class="fa fa-home" style="color: #fff;
+    font-size: 3em;"></i></a>
+  </div>
+  <div class="col s4">
+    <a href="#animatedModal2" id="nav-menu"><i class="fa fa-bars" style="color: #fff;
+    font-size: 3em;"></i></a>
+  </div>
+  <div class="col s4">
+    <a href="ContactUS.html"><i class="fa fa-envelope" style="color: #fff;
+    font-size: 3em;"></i></a>
+  </div>
+</div>
+</div>
+<!-- end navbar bottom -->
+
 <!-- menu -->
 <div class="menus" id="animatedModal2">
     <div class="close-animatedModal2 close-icon">
@@ -223,56 +223,56 @@
 			</div>
 		</div>
 	</div>
-<!-- end menu --> 
- 
-    <script type="text/javascript" src="cordova.js"></script> 
-    <script type="text/javascript" src="js/index.js"></script> 
-    <script type="text/javascript"> 
-        app.initialize(); 
-    </script> 
- 
-    <!-- js for open website outside app --> 
-    <script> 
-     var ref = null; 
-     function openInAppBrowserBlank(url) 
-     { 
-         try { 
-     ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no'); 
-              ref.addEventListener('loadstop', LoadStop); 
-              ref.addEventListener('exit', Close); 
-         } 
-         catch (err) 
-         { 
-             alert(err); 
-         } 
-     } 
-     function LoadStop(event) { 
-              if(event.url == "http://www.mypage.com/closeInAppBrowser.html"){ 
-                 // alert("fun load stop runs"); 
-                  ref.close(); 
-              } 
-         } 
-     function Close(event) { 
-              ref.removeEventListener('loadstop', LoadStop); 
-              ref.removeEventListener('exit', Close); 
-         } 
-    </script> 
-    <script> 
- 
-        function goBack() { 
-            window.history.back(); 
-        } 
-    </script> 
-    <!-- scripts --> 
-    <script src="js/jquery.min.js"></script> 
-    <script src="js/materialize.min.js"></script> 
-    <script src="js/owl.carousel.min.js"></script> 
-    <script src="js/fakeLoader.min.js"></script> 
-    <script src="js/animatedModal.min.js"></script> 
-    <script src="js/jquery.filterizr.min.js"></script> 
-    <script src="js/jquery.magnific-popup.min.js"></script> 
-    <script src="js/portfolio.js"></script> 
-    <script src="js/main.js"></script> 
-</body> 
- 
-</html> 
+<!-- end menu -->
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+
+    <!-- js for open website outside app -->
+    <script>
+     var ref = null;
+     function openInAppBrowserBlank(url)
+     {
+         try {
+     ref = window.open(encodeURI(url),'_blank','location=no'); //encode is needed if you want to send a variable with your link if not you can use ref = window.open(url,'_blank','location=no');
+              ref.addEventListener('loadstop', LoadStop);
+              ref.addEventListener('exit', Close);
+         }
+         catch (err)
+         {
+             alert(err);
+         }
+     }
+     function LoadStop(event) {
+              if(event.url == "http://www.mypage.com/closeInAppBrowser.html"){
+                 // alert("fun load stop runs");
+                  ref.close();
+              }
+         }
+     function Close(event) {
+              ref.removeEventListener('loadstop', LoadStop);
+              ref.removeEventListener('exit', Close);
+         }
+    </script>
+    <script>
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/fakeLoader.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
