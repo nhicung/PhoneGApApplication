@@ -22,7 +22,7 @@ Clone or download the project. Set up PhoneGap to open the app.
 ## Feature
 
 This website is for:
-* Learning about Sjogren symptom and how to prevent it
+* Learning about Sjögren symptom and how to prevent it
 * Contact info needed for help with this symptom
 
 ## View
