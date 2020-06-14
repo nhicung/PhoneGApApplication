@@ -26,10 +26,14 @@ This website is for:
 * Contact info needed for help with this symptom
 
 ## View
+### Home Screen
 <img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/home.png" width="30%" height="30%"/>
+
+### Menu Screen
 <img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/menu.png" width="30%" height="30%"/>
-<img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/info.png" width="30%" height="30%"/>
-<img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/symptoms.png" width="30%" height="30%"/>
+
+## Info Screen
+<img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/info.png" width="30%" height="30%"/> <img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/symptoms.png" width="30%" height="30%"/>
 
 ## Technology
 
