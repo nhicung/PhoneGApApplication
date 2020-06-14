@@ -32,7 +32,7 @@ This website is for:
 ### Menu Screen
 <img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/menu.png" width="30%" height="30%"/>
 
-## Info Screen
+### Info Screen
 <img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/info.png" width="30%" height="30%"/> <img src="https://github.com/nhicung/SjogrenDictionary/blob/master/screenshots/symptoms.png" width="30%" height="30%"/>
 
 ## Technology
